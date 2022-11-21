@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
+
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 *{
     margin: 0;
     padding: 0;
@@ -9,8 +14,16 @@ export default createGlobalStyle`
 
 body{
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-    color: ${({ theme }) => theme.COLORS.WHITE}
+    color: ${({ theme }) => theme.COLORS.WHITE};
 
+    -webkit-font-smoothing: antialiased;
+
+}
+
+input, body, button, textarea{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    outline: none;
 }
 
 a{

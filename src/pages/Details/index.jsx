@@ -1,10 +1,17 @@
 import { Container } from './styles'
+import { Button } from '../../components/Button'
+
+import { Header } from '../../components/Header'
 
 export function Details(){
   return(
     <Container>
-      <h1>Hello World</h1>
-      <h2>Olá</h2>
+      <Header/>
+
+      <Button 
+        name="Criar conta" loading
+      />
+      
     </Container>
   )
 }

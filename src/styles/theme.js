@@ -13,7 +13,10 @@ export default{
         GREY_200: "#C4C4CC",
         GREY_400: "#7C7C8A",
 
-        RED:"#92000E",
+        RED_500:"#92000E",
+        RED_600:"#AB4D55",
+        RED_700:"#750310",
+        
         WHITE:"#FFFFFF",
         
     }
