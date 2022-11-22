@@ -21,7 +21,12 @@ export const Container = styled.div`
     color: ${({theme}) => theme.COLORS.WHITE};;
     border-radius: 5px;
     cursor: pointer;
-
+    
     white-space: nowrap; 
+
+    :hover{
+        opacity: 0.8;
+        transition: 0.2s;
+    }
 
 `

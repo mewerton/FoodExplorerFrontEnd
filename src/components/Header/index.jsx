@@ -14,7 +14,7 @@ export function Header(){
     <Container>
     <div className="logo">
         <img src={Logo} alt="Logo" />
-        <h2>food explorer</h2>
+        <span>food explorer</span>
     </div>
     <ButtonText name="Meus favoritos"/>
     

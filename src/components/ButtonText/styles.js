@@ -15,5 +15,14 @@ align-items: center;
 text-align: center;
 
 white-space: nowrap; 
+cursor: pointer;
+
+padding-right: 10px;
+
+:hover{
+        color: ${({theme}) => theme.COLORS.BLUE_500};
+        transition: 0.2s;
+    }
+
 
 `

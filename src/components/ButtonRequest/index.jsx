@@ -9,7 +9,7 @@ export function ButtonRequest({name, loading = false, icon: Icon, ...rest}){
         {...rest}>
             <img src={Request} alt="Request" />
             { loading ? 'Carregando...' : name}
-            {Icon && <Icon size={10} />}
+            {Icon && <Icon size={20} />}
         </Container>
     )
 }

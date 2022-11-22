@@ -9,7 +9,7 @@ export function ButtonText({name, loading = false, icon: Icon, ...rest}){
     >
 
         { loading ? 'Carregando...' : name}
-        {Icon && <Icon size={20} />}
+        {Icon && <Icon size={30} />}
 
     </Container>
     )
