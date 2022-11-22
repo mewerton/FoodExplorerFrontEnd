@@ -7,6 +7,22 @@ display: grid;
 grid-template-rows: 105px auto;
 grid-template-areas: 
 "header"
-"content"
-;
+"content";
+
+.Cards{
+    display: flex;
+    justify-content: center;
+}
+`
+export const Links = styled.ul`
+
+list-style: none;
+
+display: flex;
+justify-content: center;
+
+>li{
+    margin-top: 0px;
+}
+
 `

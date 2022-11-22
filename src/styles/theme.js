@@ -5,6 +5,7 @@ export default{
         BACKGROUND_700: "#001119",
         BACKGROUND_800: "#00111A",
         BACKGROUND_900: "#000A0F",
+        BACKGROUND_LINEAR: "linear-gradient(180deg, #091E26 0%, #00131C 100%)",
 
         BLUE_100: "#82F3FF",
         BLUE_500: "#065E7C",
@@ -18,6 +19,7 @@ export default{
         RED_700:"#750310",
         
         WHITE:"#FFFFFF",
+    
         
     }
 }

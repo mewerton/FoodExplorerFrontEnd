@@ -18,15 +18,16 @@ export const Container = styled.div`
     height: 56px;
 
     background: ${({theme}) => theme.COLORS.RED_700};
-    color: ${({theme}) => theme.COLORS.WHITE};;
+    color: ${({theme}) => theme.COLORS.WHITE};
     border-radius: 5px;
     cursor: pointer;
     
     white-space: nowrap; 
 
     :hover{
-        opacity: 0.8;
+        background: ${({theme}) => theme.COLORS.RED_500};
         transition: 0.2s;
+        
     }
 
 `
