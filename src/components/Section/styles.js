@@ -6,6 +6,7 @@ export const Container = styled.section`
 width: 1122px;
 
 
+
 .section{
     padding-bottom: 0px;
     margin-bottom: 0px;

@@ -4,6 +4,7 @@ import { Section } from '../../components/Section'
 import { Header } from '../../components/Header'
 import { Card } from '../../components/Card'
 import { Banner } from '../../components/Banner'
+import { Footer } from '../../components/Footer'
 
 export function Details(){
   return(
@@ -44,6 +45,7 @@ export function Details(){
 
       {/* <Button name="Criar conta"/> */}
       </Main>
+      <Footer/>
     </Container>
   )
 }

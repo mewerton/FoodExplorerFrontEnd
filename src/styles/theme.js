@@ -21,7 +21,9 @@ export default{
         RED_600:"#AB4D55",
         RED_700:"#750310",
         
+
         WHITE:"#FFFFFF",
+        WHITE_100:"#FFFAF1",
     
         
     }

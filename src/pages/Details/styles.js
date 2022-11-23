@@ -33,5 +33,6 @@ export const Main = styled.main`
    .Cards:first-child{
         margin-top: 62px;
     } 
+    padding-bottom: 98px;
 
 `
