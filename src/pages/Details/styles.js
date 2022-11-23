@@ -24,5 +24,14 @@ justify-content: center;
 >li{
     margin-top: 0px;
 }
+`
+
+export const Main = styled.main`
+   
+   background: ${({theme}) => theme.COLORS.BACKGROUND_900};
+
+   .Cards:first-child{
+        margin-top: 62px;
+    } 
 
 `

@@ -3,7 +3,9 @@ import { Container } from './styles'
 export function Section( {name, children} ){
     return(
         <Container>
-            <h2>{name}</h2>
+            <div className="section">
+            <span>{name}</span>
+            </div>
             {children}
         </Container>
     )

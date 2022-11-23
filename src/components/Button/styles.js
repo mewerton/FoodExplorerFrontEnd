@@ -20,6 +20,14 @@ export const Container = styled.div`
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    :hover{
+        background: ${({theme}) => theme.COLORS.RED_400};
+        
+    }
         
     &:disabled{
         opacity: 0.5;

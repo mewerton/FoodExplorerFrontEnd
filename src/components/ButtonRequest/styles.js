@@ -23,11 +23,10 @@ export const Container = styled.div`
     cursor: pointer;
     
     white-space: nowrap; 
+    transition: 0.2s;
 
     :hover{
-        background: ${({theme}) => theme.COLORS.RED_500};
-        transition: 0.2s;
-        
+        background: ${({theme}) => theme.COLORS.RED_500};   
     }
 
 `

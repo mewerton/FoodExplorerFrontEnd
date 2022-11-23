@@ -1,4 +1,4 @@
-import { Container, Links } from './styles'
+import { Container, Links, Main } from './styles'
 import { Button } from '../../components/Button'
 import { Section } from '../../components/Section'
 import { Header } from '../../components/Header'
@@ -10,13 +10,15 @@ export function Details(){
     <Container>
       <Header/>
       <Banner/>
-      
-      {/* <div className="Cards">
-        <Section name="Pratos">
+      <Main>  
+      <div className="Cards">
+        <Section name="Pratos principais">
             <Links>        
               <li><Card/></li>
               <li><Card/></li>
               <li><Card/></li>
+              <li><Card/></li>
+              
             </Links>
         </Section>
       </div>
@@ -28,10 +30,20 @@ export function Details(){
               <li><Card/></li>
             </Links>
         </Section>
-      </div> */}
+      </div>
+      <div className="Cards">
+        <Section name="Bedidas">
+            <Links>        
+              <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
+            </Links>
+        </Section>
+      </div>
+      
 
       {/* <Button name="Criar conta"/> */}
-      
+      </Main>
     </Container>
   )
 }
