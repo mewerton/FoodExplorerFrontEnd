@@ -19,6 +19,10 @@ export function Details(){
               <li><Card/></li>
               <li><Card/></li>
               <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
               
             </Links>
         </Section>
@@ -29,12 +33,22 @@ export function Details(){
               <li><Card/></li>
               <li><Card/></li>
               <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
             </Links>
         </Section>
       </div>
       <div className="Cards">
         <Section name="Bedidas">
             <Links>        
+              <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
+              <li><Card/></li>
               <li><Card/></li>
               <li><Card/></li>
               <li><Card/></li>

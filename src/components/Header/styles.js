@@ -31,7 +31,7 @@ export const Container = styled.header`
 
     padding-right: 10px;
 
-    }
+     }
   
 
    
