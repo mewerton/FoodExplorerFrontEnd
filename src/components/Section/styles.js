@@ -23,8 +23,8 @@ width: 1120px;
     overflow-x: auto;
     scroll-behavior: smooth;
     display: flex;
-    flex-direction: row;
-
+    align-items: center;
+    width: 1118px;
 } 
 
 .carousel::-webkit-scrollbar{
@@ -40,12 +40,32 @@ width: 1120px;
     
     position: absolute;
 
-    margin-top: 200px;
-
-
-     
-    
+        
 }
 
+.left{
+    position: absolute;
+    left: -10px;
+    width: 116px;
+    height: 415px;
+    border: none;
+    top: 0;
+    background: linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-top: 39.5px;
+    
+    
+}
+.right{
+    position: absolute;
+    right: 0;
+    width: 116px;
+    height: 415px;
+    border: none;
+    top: 0px;
+    background: linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%);
+    margin-top: 39.5px;
+    
+}
 
 `
