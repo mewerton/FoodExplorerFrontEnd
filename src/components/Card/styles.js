@@ -43,6 +43,7 @@ export const Container = styled.div`
     .request{
         display: flex;
         flex-direction: row;
+        justify-content: center;
         align-items: center;
        
         gap: 16px;
@@ -58,12 +59,15 @@ export const Container = styled.div`
 
         width: 208px;
         height: 48px;
-
-        >svg{
-            cursor: pointer;
-            font-size: 18px;
+           
+        >button{
+            background: transparent;
+            border: 0;
         }
-            
+        >button:first-child{
+            margin-top: -10px;
+        }
+    
     
     }
 

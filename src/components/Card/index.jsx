@@ -1,7 +1,10 @@
 import { Container, ButtonAdd } from "./styles"
 import { MdFavoriteBorder } from 'react-icons/md'
 import { GrAdd, GrSubtract } from 'react-icons/gr'
+import { RiAddBoxFill, RiFileReduceFill} from 'react-icons/ri'
 import imgTest from '../../assets/imgTeste.png'
+import sub from '../../assets/sub.svg'
+import add from '../../assets/add.svg'
 import { Button } from "../Button"
 
 export function Card(){
@@ -19,9 +22,14 @@ export function Card(){
                 <span>79,90</span>
            </div>
            <div className="request"> 
-                <GrSubtract/>
+           
+                <button><img src={sub}/> </button>
                 <span>01</span>
-                <GrAdd/>
+                <button><img src={add}/> </button>
+                
+                
+                
+                
                 <ButtonAdd>
                     <Button name="Incluir"/>
                 </ButtonAdd>   

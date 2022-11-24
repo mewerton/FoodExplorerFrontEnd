@@ -37,9 +37,9 @@ width: 1120px;
     
     display: flex;
     justify-content: space-between;
-    
-    position: absolute;
 
+    position: absolute;
+    border: 0;
         
 }
 
@@ -54,6 +54,9 @@ width: 1120px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     margin-top: 39.5px;
     
+    >img{
+        margin-top: 190px ;
+    }
     
 }
 .right{
@@ -65,7 +68,11 @@ width: 1120px;
     top: 0px;
     background: linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%);
     margin-top: 39.5px;
-    
+
+    >img{
+        margin-top: 190px ;
+    }
+   
 }
 
 `

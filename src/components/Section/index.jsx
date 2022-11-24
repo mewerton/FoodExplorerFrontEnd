@@ -26,13 +26,15 @@ export function Section( {name, children} ){
             <span>{name}</span>
             <div className="buttons">
                 <button onClick={handleLeftClick}>
-                    <img src={left}/>
-                    <div className="left"></div>
+                    
+                    <div className="left"><img src={right}/></div>
+                    
                 </button>
                 
                 <button onClick={handleRightClick}>
-                <div className="right"></div> 
-                    <img src={right}/>
+                <div className="right"><img src={right}/></div> 
+                
+                    
                 </button> 
             </div>
             </div>
