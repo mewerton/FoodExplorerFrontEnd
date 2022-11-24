@@ -24,14 +24,7 @@ export function Section( {name, children} ){
             <div className="section">
             <span>{name}</span>
             <div className="buttons">
-{/*                 
-                <button onClick={handleLeftClick}>    
-                    <div className="left"><img src={right}/></div>
-                </button>
-                
-                <button onClick={handleRightClick}>
-                    <div className="right"><img src={right}/></div> 
-                </button>  */}
+
                  <div className="left" onClick={handleLeftClick}><img src={right}/></div>
                  <div className="right" onClick={handleRightClick}><img src={right}/></div>
 

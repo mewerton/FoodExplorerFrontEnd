@@ -25,6 +25,8 @@ width: 1120px;
     display: flex;
     align-items: center;
     width: 1118px;
+
+    flex-direction: row;
 } 
 
 .carousel::-webkit-scrollbar{
