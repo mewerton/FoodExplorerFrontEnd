@@ -29,6 +29,7 @@ width: 1120px;
 
 .carousel::-webkit-scrollbar{
     display: none;
+    
 }
 
 
@@ -41,13 +42,13 @@ width: 1120px;
     position: absolute;
     border: 0;
 
-  
+    cursor: pointer;
         
 }
 
 .left{
     position: absolute;
-    left: -10px;
+    left: -5px;
     width: 116px;
     height: 415px;
     border: none;
@@ -58,10 +59,10 @@ width: 1120px;
     
     >img{
         margin-top: 190px ;
+        margin-left: 72px;
     }
    
-    
-}
+  }
 .right{
     position: absolute;
     right: 0;
@@ -74,8 +75,10 @@ width: 1120px;
 
     >img{
         margin-top: 190px ;
+        margin-left: 72px;
     }
-   
+ 
+      
 }
 
 `
