@@ -28,5 +28,9 @@ export const Container = styled.div`
     :hover{
         background: ${({theme}) => theme.COLORS.RED_500};   
     }
+    :active{
+        transform: scale(0.98);
+        transition: 0.02s;
+    }
 
 `

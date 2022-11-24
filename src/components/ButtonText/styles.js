@@ -20,9 +20,12 @@ cursor: pointer;
 padding-right: 10px;
 
 :hover{
-        color: ${({theme}) => theme.COLORS.BLUE_500};
+        color: ${({theme}) => theme.COLORS.BLUE_100};
         transition: 0.2s;
     }
-
+:active{
+        transform: scale(0.97);
+        transition: 0.02s;
+}
 
 `

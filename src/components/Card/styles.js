@@ -67,7 +67,11 @@ export const Container = styled.div`
         >button:first-child{
             margin-top: -10px;
         }
-    
+        >button:active{
+                    
+        transform: scale(0.90);
+        transition: 0.01s;
+        }
     
     }
 

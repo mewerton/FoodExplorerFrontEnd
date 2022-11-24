@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Container = styled.section`
+export const Container = styled.div`
 
 
 width: 1120px;
@@ -40,6 +40,8 @@ width: 1120px;
 
     position: absolute;
     border: 0;
+
+  
         
 }
 
@@ -57,6 +59,7 @@ width: 1120px;
     >img{
         margin-top: 190px ;
     }
+   
     
 }
 .right{
