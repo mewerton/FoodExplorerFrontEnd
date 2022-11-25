@@ -7,7 +7,6 @@ export function Button({name, loading = false, icon: Icon, ...rest}){
         disabled={loading}
         {...rest}
     >
-
         { loading ? 'Carregando...' : name}
         {Icon && <Icon size={20} />}
 

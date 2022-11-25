@@ -1,7 +1,7 @@
 import { Container } from "./styles";
 import Logo from '../../assets/logoblue.svg'
 import { FiSearch, FiLogOut } from 'react-icons/fi'
-import { Input } from '../Input'
+import { Search } from '../Search'
 import { ButtonText } from "../ButtonText";
 import { ButtonRequest } from "../ButtonRequest";
 
@@ -17,7 +17,7 @@ export function Header(){
     </div>
     <ButtonText name="Meus favoritos"/>
     
-    <Input placeholder="Busque pelas opções de pratos" icon={FiSearch}/>
+    <Search placeholder="Busque pelas opções de pratos" icon={FiSearch}/>
     
     <ButtonRequest name="Meu pedido (0)"/>
     
