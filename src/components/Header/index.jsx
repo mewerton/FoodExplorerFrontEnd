@@ -5,8 +5,6 @@ import { Search } from '../Search'
 import { ButtonText } from "../ButtonText";
 import { ButtonRequest } from "../ButtonRequest";
 
-
-
 export function Header(){
     return(
     <Container>
