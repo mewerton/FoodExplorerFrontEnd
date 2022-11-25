@@ -48,9 +48,11 @@ export const Container = styled.div`
     }
 
     .logo{
-        margin-top: -450px;
+        margin-top: -540px;
         position: absolute;
     }
+
+
 
 }
 
@@ -106,7 +108,7 @@ border-radius: 16px;
     }
 }
 
-.login >.email,.password, >span{
+.login >.email,.password, .name, >span{
     
     color: ${({theme}) => theme.COLORS.GREY_200};
     display: flex;
@@ -114,6 +116,9 @@ border-radius: 16px;
     gap: 8px;
 }
 
+.name{
+margin-top:32px ;
+}
 .email{
 margin-top:32px ;
 }
@@ -150,15 +155,24 @@ justify-content: center;
 
 }
 
+@media(max-width: 800px){
+    .name{
+        margin-top: 10px;
+    }
+}
+
 @media(max-width: 470px){
  
     width: 450px;
     height: 660px;
 
     .login{
+
         width: 400px;
         height: 460px;
     }
+
+
 
 }
 
