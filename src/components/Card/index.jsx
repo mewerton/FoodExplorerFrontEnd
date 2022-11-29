@@ -27,9 +27,6 @@ export function Card(){
                 <span>01</span>
                 <button><img src={add}/> </button>
                 
-                
-                
-                
                 <ButtonAdd>
                     <Button name="Incluir"/>
                 </ButtonAdd>   

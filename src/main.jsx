@@ -8,14 +8,14 @@ import theme from './styles/theme'
 //import { Details } from './pages/Details'
 //import { SignIn } from './pages/SignIn'
 //import { SignUp } from './pages/SignUp'
-import { Item } from './pages/item'
+import { Product } from './pages/Product'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
-      <Item />
+      <Product />
     </ThemeProvider>
   </React.StrictMode>
 )
