@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container, ButtonReq } from "./styles";
 import Logo from '../../assets/logoblue.svg'
 import { FiSearch, FiLogOut } from 'react-icons/fi'
 import { Search } from '../Search'
@@ -17,7 +17,9 @@ export function Header(){
     
     <Search placeholder="Busque pelas opções de pratos" icon={FiSearch}/>
     
-    <ButtonRequest name="Meu pedido (0)"/>
+    <ButtonReq>
+        <ButtonRequest name="Meu pedido (0)"/>
+    </ButtonReq>
     
     <ButtonText icon={FiLogOut} />
    

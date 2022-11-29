@@ -14,7 +14,7 @@ export const Container = styled.div`
     font-size: 14px;
     line-height: 24px;
 
-    width: 216px;
+    width: 100%;
     height: 56px;
 
     background: ${({theme}) => theme.COLORS.RED_700};

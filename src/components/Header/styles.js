@@ -36,3 +36,7 @@ export const Container = styled.header`
 
    
 `
+
+export const ButtonReq = styled.div`
+    width: 216px;
+`
