@@ -139,6 +139,13 @@ height: 100vh;
     >button:first-child{
         margin-bottom: 10px;
     }
+
+    >button:active{
+                    
+        transform: scale(0.90);
+        transition: 0.01s;
+    }
+
    >label{
     font-size: 20px;
     color: ${({theme}) => theme.COLORS.GREY_100};
