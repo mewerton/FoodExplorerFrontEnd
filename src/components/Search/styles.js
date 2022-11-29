@@ -38,4 +38,17 @@ border-radius: 5px;
     line-height: 100%;
 }
 
+@media(max-width: 1140px){
+    
+    >svg{
+           
+    margin-left: 10px;
+    }
+
+    >input{
+        width: 180px;
+    }
+
+    }
+
 ` 

@@ -33,10 +33,29 @@ export const Container = styled.header`
 
      }
   
+     @media(max-width: 1140px){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
 
+        .logo{
+            padding-right: 5px;
+            gap: 5px;
+        }
+
+    }
    
 `
 
 export const ButtonReq = styled.div`
-    width: 216px;
+    max-width: 216px;
+
+    @media(max-width: 1140px){
+       
+        max-width: 160px;
+    }
+
 `
+

@@ -43,4 +43,11 @@ background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 
     color: ${({theme}) => theme.COLORS.WHITE_100};
 }
+
+@media(max-width: 1140px){
+    .footer{
+        width: 768px
+    }
+}
+
 `
