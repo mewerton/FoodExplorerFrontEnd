@@ -151,6 +151,29 @@ height: 100vh;
     color: ${({theme}) => theme.COLORS.GREY_100};
    }
 }
+
+@media(max-width: 1140px){
+    .productPage{
+        width: 768px
+    }
+    .image{
+        >img{
+            height:300px;
+        }
+    }
+
+    .description{
+    font-size: 20px;
+    }
+
+    .name{
+    font-size: 35px;
+    }
+}
+@media(max-width: 768px){
+    
+}
+
 `
 
 export const ButtonReq = styled.div`

@@ -34,10 +34,7 @@ export const Container = styled.header`
      }
   
      @media(max-width: 1140px){
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+
         gap: 12px;
 
         .logo{
@@ -45,6 +42,11 @@ export const Container = styled.header`
             gap: 5px;
         }
 
+    }
+
+    @media(max-width: 768px){
+        
+    
     }
    
 `
