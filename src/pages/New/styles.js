@@ -125,4 +125,22 @@ export const Form = styled.form`
             }
         }
     }
+
+    .ingredients{
+        margin-top: 40px;
+    }
+    .item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px 8px;
+        gap: 16px;
+
+        border: 1px solid ${({theme}) => theme.COLORS.WHITE};
+        border-radius: 8px;
+
+        margin-top: 8px;
+
+    }
+
 `
