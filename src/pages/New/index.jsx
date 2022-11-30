@@ -11,8 +11,11 @@ import ImgBack from '../../assets/back.svg'
 export function New(){
     return(
         <Container>
-            <Header/>
+            <Header />
             <main>
+                <div className="main">
+
+                
                 <div className="back">
                         <img src={ImgBack} alt="Voltar" />
                         <span>voltar</span>
@@ -39,14 +42,20 @@ export function New(){
                         </div>
                         
                     </div>
-                    <div className="description"></div>
+                    <div className="description">
+                        <span>Descrição</span>
+                        <div className="textarea">
+                            <Textarea placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"/>
+                        </div>
+                    </div>
+                    <div className="add">
+                        <button> <p>Adicionar pedido</p>  </button>
+                    </div>
 
                 </Form>
+                </div>
             </main>
-
-            {/* <Textarea placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"/>
-            <Input placeholder="Ex.: Salada Ceasar"/> */}
-            
+            <Footer/>
             
         </Container>
     )

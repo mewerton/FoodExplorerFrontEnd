@@ -2,17 +2,24 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 100vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
+    
+    
  
     >main{
         width: 1120px;
         display: flex;
         flex-direction: column;
+        height: 100vh;
+       
         
+    }
+    .main{
+       
     }
 
     .back{
@@ -49,6 +56,7 @@ export const Container = styled.div`
 export const Form = styled.form`
 
     margin-top: 24px;
+  
     
     >h1{
         font-family: 'Poppins';
@@ -142,5 +150,49 @@ export const Form = styled.form`
         margin-top: 8px;
 
     }
+
+    .description{
+        margin-top: 32px;
+
+    }
+    .textarea{
+        margin-top: 8px;
+        
+    }
+    .add{
+
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+
+        >button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 32px;
+       
+
+        width: 357px;
+        height: 48px;
+        color: ${({theme}) => theme.COLORS.WHITE};
+
+        background: ${({theme}) => theme.COLORS.BACKGROUND_LINEAR3};
+        
+        border: 1px solid ${({theme}) => theme.COLORS.WHITE};
+        border-radius: 5px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+          
+        }
+        
+        
+    }
+
+   
 
 `
