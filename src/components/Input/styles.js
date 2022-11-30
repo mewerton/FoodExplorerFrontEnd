@@ -8,8 +8,10 @@ align-items: center;
 
 background-color: transparent;
 
-border: 1px solid #FFFFFF;
+border: 1px solid ${({theme}) => theme.COLORS.WHITE};
 border-radius: 5px;
+
+
 
 >svg{
         margin-left: 16px;
@@ -24,8 +26,11 @@ border-radius: 5px;
     background-color: transparent;
     border: 0;
     width: 100%;
-    color: ${({theme}) => theme.COLORS.GREY_400};
+    color: ${({theme}) => theme.COLORS.WHITE};
 
+    &::placeholder{
+        color: ${({theme}) => theme.COLORS.GREY_400};
+    }
    
 }
 

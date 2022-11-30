@@ -29,13 +29,17 @@ border-radius: 5px;
     
 
     background: transparent;
-    color: ${({theme})=> theme.COLORS.GREY_400};
+    color: ${({theme})=> theme.COLORS.WHITE};
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
+
+    &::placeholder{
+        color: ${({theme}) => theme.COLORS.GREY_400};
+    }
 }
 
 @media(max-width: 1140px){
