@@ -170,9 +170,6 @@ height: 100vh;
     font-size: 35px;
     }
 }
-@media(max-width: 768px){
-    
-}
 
 `
 

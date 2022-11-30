@@ -44,11 +44,6 @@ export const Container = styled.header`
 
     }
 
-    @media(max-width: 768px){
-        
-    
-    }
-   
 `
 
 export const ButtonReq = styled.div`
