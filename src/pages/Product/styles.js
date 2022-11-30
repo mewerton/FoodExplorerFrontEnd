@@ -6,7 +6,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 100%;
-height: 100vh;
+
 
 
 .productPage{
@@ -14,6 +14,8 @@ height: 100vh;
     display: flex;
     width: 1120px;
     height: 100vh;
+   
+    
     
 }
 .product{
