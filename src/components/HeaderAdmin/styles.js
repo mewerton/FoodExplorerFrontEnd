@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
+
 
 export const Container = styled.header`
 
@@ -9,7 +10,7 @@ export const Container = styled.header`
     width: 100%;
 
     display: flex;
-    
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 32px;
@@ -18,46 +19,58 @@ export const Container = styled.header`
 
     .page{
         display: flex;
-        width: 1120px;
+        align-items: center;
         justify-content: space-between;
+        width: 1120px;
+        gap: 32px;
+    }
+   
+    a{
+        white-space: nowrap; 
+        display: flex;
         align-items: center; 
+        color: ${({ theme }) => theme.COLORS.WHITE};
+
+        gap: 11px;
+
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 29px;
+
+        cursor: pointer;
+
+        padding-right: 10px;
+
+            >span{
+        
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 29px;
+            }
+
+    }
+    .conponents{
+        display: flex;
+        gap: 12px;
+
     }
 
-    a{
-    color: ${({ theme }) => theme.COLORS.WHITE};
-    white-space: nowrap; 
-    display: flex;
-    align-items: center; 
-  
-    gap: 11px;
-
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 29px;
-
-    cursor: pointer;
-
-    padding-right: 10px;
-
-
-     }
   
      @media(max-width: 1140px){
 
-        gap: 12px;
-
-        .logo{
-            padding-right: 5px;
-            gap: 5px;
+        .page{
+            width: 760px;
         }
 
-    }
+        gap: 12px;
 
-    .header{
-        display: flex;
-        gap: 10px;
         
+        a{
+            padding-right: 0px;
+        }
+
     }
 
 `
@@ -67,7 +80,9 @@ export const ButtonReq = styled(Link)`
 
     @media(max-width: 1140px){
        
-        max-width: 160px;
+       
+            max-width: 165px;
+        
     }
 
 `
