@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.header`
 
@@ -19,14 +20,15 @@ export const Container = styled.header`
         display: flex;
         width: 1120px;
         justify-content: space-between;
-
+        align-items: center; 
     }
 
-    .logo{
+    a{
+    color: ${({ theme }) => theme.COLORS.WHITE};
     white-space: nowrap; 
     display: flex;
     align-items: center; 
-
+  
     gap: 11px;
 
     font-family: 'Roboto';
@@ -37,6 +39,7 @@ export const Container = styled.header`
     cursor: pointer;
 
     padding-right: 10px;
+
 
      }
   
@@ -59,7 +62,7 @@ export const Container = styled.header`
 
 `
 
-export const ButtonReq = styled.div`
+export const ButtonReq = styled(Link)`
     max-width: 216px;
 
     @media(max-width: 1140px){

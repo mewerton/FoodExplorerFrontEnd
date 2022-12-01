@@ -15,10 +15,11 @@ export const Container = styled.header`
     
     background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 
-    .logo{
+    a{
     white-space: nowrap; 
     display: flex;
     align-items: center; 
+    color: ${({ theme }) => theme.COLORS.WHITE};
 
     gap: 11px;
 

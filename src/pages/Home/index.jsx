@@ -12,52 +12,51 @@ export function Home(){
       <Header/>
       <Banner/>
       <Main>  
-      <div className="Cards">
-        <Section name="Pratos principais">
-            <Links>        
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              
-            </Links>
-        </Section>
-      </div>
-      <div className="Cards">
-        <Section name="Sobremesas">
-            <Links>        
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-            </Links>
-        </Section>
-      </div>
-      <div className="Cards">
-        <Section name="Bedidas">
-            <Links>        
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-              <li><Card/></li>
-            </Links>
-        </Section>
-      </div>
+        <div className="Cards">
+          <Section name="Pratos principais">
+              <Links>        
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                
+              </Links>
+          </Section>
+        </div>
+        <div className="Cards">
+          <Section name="Sobremesas">
+              <Links>        
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+              </Links>
+          </Section>
+        </div>
+        <div className="Cards">
+          <Section name="Bedidas">
+              <Links>        
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+                <li><Card/></li>
+              </Links>
+          </Section>
+        </div>
       
 
-      {/* <Button name="Criar conta"/> */}
       </Main>
       <Footer/>
     </Container>

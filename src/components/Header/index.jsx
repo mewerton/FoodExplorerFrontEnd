@@ -4,14 +4,17 @@ import { FiSearch, FiLogOut } from 'react-icons/fi'
 import { Search } from '../Search'
 import { ButtonText } from "../ButtonText";
 import { ButtonRequest } from "../ButtonRequest";
+import { Link } from 'react-router-dom'
 
 export function Header(){
     return(
     <Container>
         
     <div className="logo">
-        <img src={Logo} alt="Logo"/>
-        <span>food explorer</span>
+        <Link to="/">
+            <img src={Logo} alt="Logo"/>
+            <span>food explorer</span>
+        </Link>
     </div>
     <ButtonText name="Meus favoritos"/>
     
