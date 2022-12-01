@@ -3,7 +3,7 @@ import { Routes, Route  } from "react-router-dom";
 import { Home } from '../pages/Home'
 import { Product } from '../pages/Product'
 import { New } from '../pages/New'
-import { Edit } from '../pages/Edit'
+import { Edition } from '../pages/Edition'
 
 
 export function AppRoutes(){
@@ -11,7 +11,7 @@ export function AppRoutes(){
         <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/new" element={<New />}/>
-            <Route path="/edit/:id" element={<Edit />}/>
+            <Route path="/edition/:id" element={<Edition />}/>
             <Route path="/product/:id" element={<Product />}/>
 
         </Routes>

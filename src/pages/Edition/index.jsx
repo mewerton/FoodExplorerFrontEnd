@@ -1,27 +1,24 @@
 import { Container, Form } from "./styles";
-import { Header } from '../../components/Header'
+import { HeaderAdmin } from '../../components/HeaderAdmin'
 import { Footer } from '../../components/Footer'
 import { Textarea } from '../../components/Textarea'
 import { Input } from '../../components/Input'
 import { FiUpload } from 'react-icons/fi'
 import { NewItem } from '../../components/NewItem'
-import { Link } from "react-router-dom";
 
 import ImgBack from '../../assets/back.svg'
 
-export function Edit(){
+export function Edition(){
     return(
         <Container>
-            <Header />
+            <HeaderAdmin />
             <main>
                 <div className="main">
 
                 
                 <div className="back">
-                    <Link to="/">
                         <img src={ImgBack} alt="Voltar" />
                         <span>voltar</span>
-                    </Link>
                 </div>
                 <Form>
                     <h1>Editar prato</h1>
