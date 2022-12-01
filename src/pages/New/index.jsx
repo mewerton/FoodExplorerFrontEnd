@@ -5,6 +5,7 @@ import { Textarea } from '../../components/Textarea'
 import { Input } from '../../components/Input'
 import { FiUpload } from 'react-icons/fi'
 import { NewItem } from '../../components/NewItem'
+import { Link } from "react-router-dom";
 
 import ImgBack from '../../assets/back.svg'
 
@@ -18,7 +19,7 @@ export function New(){
                 
                 <div className="back">
                         <img src={ImgBack} alt="Voltar" />
-                        <span>voltar</span>
+                        <Link to="/">voltar</Link>
                 </div>
                 <Form>
                     <h1>Adicionar prato</h1>

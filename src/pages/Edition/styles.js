@@ -29,7 +29,7 @@ export const Container = styled.div`
         gap: 11px;
 
 
-        >span{
+        a{
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 500;

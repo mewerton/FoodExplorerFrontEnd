@@ -30,7 +30,7 @@ width: 100%;
     gap: 11px;
 
 
-    >span{
+    a{
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;

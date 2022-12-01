@@ -12,6 +12,9 @@ import add from '../../assets/add.svg'
 import { ButtonRequest } from '../../components/ButtonRequest'
 import { Footer } from '../../components/Footer'
 
+import { Link } from "react-router-dom";
+
+
 export function Product(){
     return(
         <Container>
@@ -20,7 +23,7 @@ export function Product(){
                 <div className="product">
                     <div className="back">
                         <img src={ImgBack} alt="Voltar" />
-                        <span>voltar</span>
+                        <Link to="/">voltar</Link>
                     </div>
                     <div className="item">
                         <div className="image">
