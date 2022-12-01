@@ -1,5 +1,5 @@
 import { Container, Form } from "./styles";
-import { Header } from '../../components/Header'
+import { HeaderAdmin } from '../../components/HeaderAdmin'
 import { Footer } from '../../components/Footer'
 import { Textarea } from '../../components/Textarea'
 import { Input } from '../../components/Input'
@@ -11,7 +11,7 @@ import ImgBack from '../../assets/back.svg'
 export function New(){
     return(
         <Container>
-            <Header />
+            <HeaderAdmin />
             <main>
                 <div className="main">
 
