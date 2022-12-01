@@ -6,7 +6,7 @@ import { Card } from '../../components/Card'
 import { Banner } from '../../components/Banner'
 import { Footer } from '../../components/Footer'
 
-export function Details(){
+export function Home(){
   return(
     <Container>
       <Header/>

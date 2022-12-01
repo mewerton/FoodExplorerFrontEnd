@@ -1,10 +1,13 @@
 import { Container, Form } from './styles'
 import { Input } from '../../components/Input'
+import { Button } from '../../components/Button'
 import {FiMail} from 'react-icons/fi'
 import {BsPerson} from 'react-icons/bs'
 import {RiLockPasswordLine} from 'react-icons/ri'
-import { Button } from '../../components/Button'
 import LogoGG from '../../assets/logoblueGG.svg'
+
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -40,7 +43,7 @@ export function SignIn(){
                     </div>
                     <Button name="Entrar"/>
                     <div className="create">
-                        <a href="#">Criar uma conta</a>
+                        <Link to="/signup">Criar uma conta</Link>
                     </div> 
                 </div>
 

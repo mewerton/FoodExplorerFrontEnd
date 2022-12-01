@@ -6,6 +6,8 @@ import {RiLockPasswordLine} from 'react-icons/ri'
 import { Button } from '../../components/Button'
 import LogoGG from '../../assets/logoblueGG.svg'
 
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -48,7 +50,7 @@ export function SignUp(){
                     </div>
                     <Button name="Criar conta"/>
                     <div className="create">
-                        <a href="#">Já tenho uma conta</a>
+                        <Link to="/">Já tenho uma conta</Link>
                     </div> 
                 </div>
 
