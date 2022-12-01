@@ -49,7 +49,7 @@ export function New(){
                         </div>
                     </div>
                     <div className="add">
-                        <button> <p>Adicionar pedido</p>  </button>
+                        <button> <p>Adicionar prato</p>  </button>
                     </div>
 
                 </Form>

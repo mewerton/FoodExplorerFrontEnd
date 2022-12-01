@@ -187,6 +187,11 @@ export const Form = styled.form`
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
+
+        :hover{
+                color: ${({theme}) => theme.COLORS.BLUE_100};
+                border: 1px solid ${({theme}) => theme.COLORS.BLUE_100};
+            }
           
         }
         
