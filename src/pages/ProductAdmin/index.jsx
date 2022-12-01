@@ -1,4 +1,4 @@
-import { Header } from '../../components/Header'
+import { HeaderAdmin } from '../../components/HeaderAdmin'
 import { Container, ButtonReq } from './styles'
 import { Footer } from '../../components/Footer'
 import { ButtonRequest } from '../../components/ButtonRequest'
@@ -14,10 +14,10 @@ import sub from '../../assets/sub.svg'
 import add from '../../assets/add.svg'
 
 
-export function Product(){
+export function ProductAdmin(){
     return(
         <Container>
-            <Header/>
+            <HeaderAdmin/>
             <div className="productPage">
                 <div className="product">
                     <div className="back">
@@ -60,11 +60,9 @@ export function Product(){
                                     <span>25,97</span>
                                 </div>
                                 <div className="requestItem">
-                                    <button><img src={sub}/> </button>
-                                    <label>01</label>
-                                    <button><img src={add}/> </button>
+                                    
                                     <ButtonReq>
-                                        <ButtonRequest name="incluir"/>
+                                        <ButtonRequest name="Editar produto"/>
                                     </ButtonReq>
                                     
                                     
