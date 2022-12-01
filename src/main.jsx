@@ -9,14 +9,15 @@ import theme from './styles/theme'
 //import { SignIn } from './pages/SignIn'
 //import { SignUp } from './pages/SignUp'
 //import { Product } from './pages/Product'
-import { New } from './pages/New'
+//import { New } from './pages/New'
+import { Edit } from './pages/Edit'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
-      <New />
+      <Edit />
     </ThemeProvider>
   </React.StrictMode>
 )
