@@ -1,10 +1,5 @@
 import { Container, ButtonEdit, ButtonDelete } from "./styles"
-import { MdFavoriteBorder } from 'react-icons/md'
-import { GrAdd, GrSubtract } from 'react-icons/gr'
-import { RiAddBoxFill, RiFileReduceFill} from 'react-icons/ri'
 import imgTest from '../../assets/imgTeste.png'
-import sub from '../../assets/sub.svg'
-import add from '../../assets/add.svg'
 import { Button } from "../Button"
 import { Link } from "react-router-dom"
 
