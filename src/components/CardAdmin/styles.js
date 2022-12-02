@@ -13,7 +13,7 @@ export const Container = styled.div`
     background: ${({ theme }) => theme.COLORS.BACKGROUND_300};
 
     border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_LINEAR4};
     
 
     .item{

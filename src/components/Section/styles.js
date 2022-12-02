@@ -55,7 +55,7 @@ width: 1120px;
     height: 415px;
     border: none;
     top: 0;
-    background: linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%);
+    background: ${({theme}) => theme.COLORS.BACKGROUND_LINEAR5};
     transform: matrix(-1, 0, 0, 1, 0, 0);
     margin-top: 39.5px;
     
@@ -72,7 +72,7 @@ width: 1120px;
     height: 415px;
     border: none;
     top: 0px;
-    background: linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%);
+    background: ${({theme}) => theme.COLORS.BACKGROUND_LINEAR5};
     margin-top: 39.5px;
 
     >img{

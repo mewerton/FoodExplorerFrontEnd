@@ -9,6 +9,8 @@ export default{
         BACKGROUND_LINEAR: "linear-gradient(180deg, #091E26 0%, #00131C 100%)",
         BACKGROUND_LINEAR2:"linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%)",
         BACKGROUND_LINEAR3:"rgba(255, 255, 255, 0.1)",
+        BACKGROUND_LINEAR4: "rgba(0, 0, 0, 0.05)",
+        BACKGROUND_LINEAR5: "linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%)",
 
         BLUE_100: "#82F3FF",
         BLUE_500: "#065E7C",
