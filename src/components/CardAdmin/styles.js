@@ -75,7 +75,7 @@ export const Container = styled.div`
     
     }
 
-    .name{
+    .name a{
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
@@ -83,6 +83,7 @@ export const Container = styled.div`
         line-height: 140%;
         margin-top: 16px;
         cursor: pointer;
+        color: ${({ theme }) => theme.COLORS.GREY_100};
     }
     .info{
         font-family: 'Roboto';
@@ -113,6 +114,13 @@ export const Container = styled.div`
       
     }
 `
-export const ButtonAdd = styled.div`
+export const ButtonDelete = styled.div`
     width: 92px;
+
+    display: flex;
+`
+export const ButtonEdit = styled.div`
+    width: 92px;
+
+    display: flex;
 `

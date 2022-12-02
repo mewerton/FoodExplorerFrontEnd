@@ -1,7 +1,7 @@
 import { HeaderAdmin } from '../../components/HeaderAdmin'
-import { Container, ButtonReq } from './styles'
+import { Container, ButtonEdit, ButtonDelete } from './styles'
 import { Footer } from '../../components/Footer'
-import { ButtonRequest } from '../../components/ButtonRequest'
+import { Button } from '../../components/Button'
 import { Link } from "react-router-dom";
 
 import ImgBack from '../../assets/back.svg'
@@ -61,9 +61,15 @@ export function ProductAdmin(){
                                 </div>
                                 <div className="requestItem">
                                     
-                                    <ButtonReq>
-                                        <ButtonRequest name="Editar produto"/>
-                                    </ButtonReq>
+                                    <ButtonEdit>
+                                        <Link to="/edit/:id"><Button name="Editar prato"/></Link>
+                                        
+                                    </ButtonEdit>
+                                    <ButtonDelete>
+
+                                    <Link><Button name="Excluir prato"/></Link>
+                                    </ButtonDelete>
+                                    
                                     
                                     
                                 </div>

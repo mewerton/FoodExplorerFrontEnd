@@ -109,6 +109,8 @@ width: 100%;
 .request{
     margin-top: 47px;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .value{
@@ -128,7 +130,7 @@ width: 100%;
 
 .requestItem{
     
-    width: 215px;
+    width: 315px;
     
     display: flex;
     align-items: center;
@@ -171,14 +173,32 @@ width: 100%;
     .name{
     font-size: 35px;
     }
+
+    .request{
+        
+    }
 }
 
 `
 
-export const ButtonReq = styled.div`
+export const ButtonEdit = styled.div`
     
-    width: 192px;
-    margin-left: 10px;
+    width: 112px;
+    white-space: nowrap;
+    
+    align-items: center;
+        
+    gap: 10px;
+    
+`
 
+export const ButtonDelete = styled.div`
+    
+    width: 112px;
+    white-space: nowrap;
+    
+    align-items: center;
+        
+    gap: 10px;
     
 `
