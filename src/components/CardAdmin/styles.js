@@ -83,7 +83,7 @@ export const Container = styled.div`
         line-height: 140%;
         margin-top: 16px;
         cursor: pointer;
-        color: ${({ theme }) => theme.COLORS.GREY_100};
+        color: ${({ theme }) => theme.COLORS.WHITE};
     }
     .info{
         font-family: 'Roboto';

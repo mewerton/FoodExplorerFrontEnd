@@ -18,7 +18,7 @@ export function CardAdmin(){
                 
            </div>
            
-           <div className="name"><Link to="/product/:id">Nome do prato ></Link>  </div>
+           <div className="name"><Link to="/product/:id">Nome do prato</Link>  </div>
            <div className="info">Informações do prato</div>
            <div className="price">
                 <span>R$</span>

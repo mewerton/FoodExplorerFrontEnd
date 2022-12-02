@@ -6,6 +6,7 @@ import imgTest from '../../assets/imgTeste.png'
 import sub from '../../assets/sub.svg'
 import add from '../../assets/add.svg'
 import { Button } from "../Button"
+import { Link } from "react-router-dom"
 
 export function Card(){
     return(
@@ -13,9 +14,9 @@ export function Card(){
         <div className="fav"><MdFavoriteBorder size={25}/></div>
         <div className="item">
            <div className="image">
-                <img src={imgTest}/>
+           <Link to="/product/:id"><img src={imgTest}/></Link>
            </div>
-           <div className="name">Nome do prato </div>
+           <div className="name"><Link to="/product/:id">Nome do prato</Link></div>
            <div className="info">Informações do prato</div>
            <div className="price">
                 <span>R$</span>
