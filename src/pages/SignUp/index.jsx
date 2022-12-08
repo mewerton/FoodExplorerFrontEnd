@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import { Container, Form } from './styles'
 import { Input } from '../../components/Input'
 import {FiMail} from 'react-icons/fi'
@@ -6,12 +8,41 @@ import {RiLockPasswordLine} from 'react-icons/ri'
 import { Button } from '../../components/Button'
 import LogoGG from '../../assets/logoblueGG.svg'
 
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+
+import { api } from '../../services/api'
 
 
 
 
 export function SignUp(){
+
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    const navigate = useNavigate()
+
+    function handleSignUp(){
+        if(!name|| !email || !password){
+            return alert("Preencha todos os campos para se cadastrar")
+        }
+
+        api.post("/users", { name, email, password })
+        .then(() => {
+            alert("Usuário cadastrado com sucesso!")
+            navigate("/")
+        })
+        .catch(error => {
+            if(error.response){
+                alert(error.response.data.message)
+            }else{
+                alert("Não foi possível cadastrar")
+            }
+        })
+
+    }
+
     return(
         <Container>
             <div className="pageSignIn">
@@ -30,6 +61,7 @@ export function SignUp(){
                         placeholder="Exemplo: Maria da Silva"
                         type="text"
                         icon={BsPerson}
+                        onChange={e => setName(e.target.value)}
                     />
                     </div>
                     <div className="email">
@@ -38,6 +70,7 @@ export function SignUp(){
                         placeholder="Exemplo: exemplo@exemplo.com.br"
                         type="text"
                         icon={FiMail}
+                        onChange={e => setEmail(e.target.value)}
                     />
                     </div>
                     <div className="password">
@@ -46,9 +79,10 @@ export function SignUp(){
                         placeholder="No mínimo 6 caracteres"
                         type="password"
                         icon={RiLockPasswordLine}
+                        onChange={e => setPassword(e.target.value)}
                     />
                     </div>
-                    <Button name="Criar conta"/>
+                    <Button name="Criar conta" onClick={handleSignUp}/>
                     <div className="create">
                         <Link to="/">Já tenho uma conta</Link>
                     </div> 

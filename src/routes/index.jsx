@@ -7,7 +7,7 @@ import { AdminRoutes } from "./admin.routes";
 export function Routes(){
     return(
         <BrowserRouter>
-            <AppRoutes/>
+            <AuthRoutes/>
         </BrowserRouter>
     )
 }
