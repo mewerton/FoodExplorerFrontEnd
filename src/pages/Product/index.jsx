@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Header } from '../../components/Header'
 import { Container, ButtonReq } from './styles'
 import { Footer } from '../../components/Footer'
@@ -15,6 +16,21 @@ import add from '../../assets/add.svg'
 
 
 export function Product(){
+
+    //Função de adicionar e remover item precisa ser puxada do card cado lá já tenha preenchido.
+    
+    const [total, setTotal] = useState(1)
+    
+    function addItem(){
+        setTotal(prevState => prevState + 1)
+    }
+    function subItem(){
+
+        if(total >= 2){
+            setTotal(prevState => prevState - 1)
+        }
+    }
+
     return(
         <Container>
             <Header/>
@@ -60,9 +76,9 @@ export function Product(){
                                     <span>25,97</span>
                                 </div>
                                 <div className="requestItem">
-                                    <button><img src={sub}/> </button>
-                                    <label>01</label>
-                                    <button><img src={add}/> </button>
+                                    <button onClick={subItem}><img src={sub}/> </button>
+                                    <label>{total}</label>
+                                    <button onClick={addItem}><img src={add}/> </button>
                                     <ButtonReq>
                                         <ButtonRequest name="incluir"/>
                                     </ButtonReq>

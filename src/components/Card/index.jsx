@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Container, ButtonAdd } from "./styles"
 import { MdFavoriteBorder } from 'react-icons/md'
 import imgTest from '../../assets/imgTeste.png'
@@ -6,7 +7,22 @@ import add from '../../assets/add.svg'
 import { Button } from "../Button"
 import { Link } from "react-router-dom"
 
+
 export function Card(){
+    
+    const [total, setTotal] = useState(1)
+    
+    function addItem(){
+        setTotal(prevState => prevState + 1)
+    }
+    function subItem(){
+
+        if(total >= 2){
+            setTotal(prevState => prevState - 1)
+        }
+    }
+
+
     return(
         <Container>
         <div className="fav"><MdFavoriteBorder size={25}/></div>
@@ -22,9 +38,9 @@ export function Card(){
            </div>
            <div className="request"> 
            
-                <button><img src={sub}/> </button>
-                <span>01</span>
-                <button><img src={add}/> </button>
+                <button onClick={subItem}><img src={sub}/> </button>
+                <span>{total}</span>
+                <button onClick={addItem}><img src={add}/> </button>
                 
                 <ButtonAdd>
                     <Button name="Incluir"/>
