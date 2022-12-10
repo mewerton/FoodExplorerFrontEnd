@@ -12,7 +12,7 @@ export function Routes(){
 
     return(
         <BrowserRouter>
-            {user ? <AppRoutes/> : <AdminRoutes/>}
+            {user ? <AdminRoutes/> : <AuthRoutes/>}
             {/* {response.data.user.admin = 1 ? <AdminRoutes/> : <AuthRoutes/>} / Preciso resolver esse acesso Admin e Auth, talves usar "presmissões"  */}
 
         </BrowserRouter>

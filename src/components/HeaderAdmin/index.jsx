@@ -5,8 +5,12 @@ import { Search } from '../Search'
 import { ButtonText } from "../ButtonText";
 import { ButtonRequest } from "../ButtonRequest";
 import { Link } from 'react-router-dom'
+import { useAuth } from "../../hooks/auth";
 
 export function HeaderAdmin(){
+
+    const { signOut } = useAuth()
+
     return(
     <Container>
         
@@ -30,7 +34,7 @@ export function HeaderAdmin(){
             <ButtonRequest name="Adicionar prato"/>
         </ButtonReq>
         
-        <ButtonText icon={FiLogOut} />
+        <ButtonText icon={FiLogOut} onClick={signOut}/>
     </div>
         </div>
 
