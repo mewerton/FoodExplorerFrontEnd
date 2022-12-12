@@ -12,6 +12,11 @@ import { useState } from "react";
 import ImgBack from '../../assets/back.svg'
 
 export function New(){
+
+    const [title, setTitle] = useState("")
+    const [description, setDescription] = useState("")
+
+
     const [ingredients, setIngredients] = useState([])
     const [newIngredients, setNewIngredients] = useState("")
 
@@ -45,32 +50,45 @@ export function New(){
                         <div className="name">
                             <span>Nome</span>
                             <div className="input">
-                                <Input/>
+                                <Input
+                                    placeholder="Ex.: Salada Ceasar"
+                                />
                             </div>
                         </div>
                     </div>
-                    <div className="ingredients">
-                        <span>Ingredientes</span>
-                        <div className="item">
-                        {
-                            ingredients.map((ingredient, index) => (
+                    <div className="ingredientsPrice">
+                        <div className="ingredients">
+                            <span>Ingredientes</span>
+                            <div className="item">
+                                {
+                                    ingredients.map((ingredient, index) => (
+                                    
+                                    <NewItem 
+                                        key={String(index)}
+                                        value={ingredient}
+                                        onClick={()=> handleRemoveIngredients(ingredient)}
+                                    />
+                                    ))
+                                }
+                                <NewItem 
+                                    isNew 
+                                    placeholder="Adicionar"
+                                    onChange={e => setNewIngredients(e.target.value)}
+                                    value={newIngredients}
+                                    onClick={handleAddIngredients}
+                                />
+                            </div>
                             
-                            <NewItem 
-                                key={String(index)}
-                                value={ingredient}
-                                onClick={()=> handleRemoveIngredients(ingredient)}
-                            />
-                            ))
-                        }
-                        <NewItem 
-                            isNew 
-                            placeholder="Adicionar"
-                            onChange={e => setNewIngredients(e.target.value)}
-                            value={newIngredients}
-                            onClick={handleAddIngredients}
-                        />
                         </div>
-                        
+                        <div className="price">
+                            <span>Preço</span>
+                            <div className="input">
+                                <Input
+                                    type="number" min="0"
+                                    placeholder="R$ 00,00"
+                                />
+                            </div>
+                        </div>
                     </div>
                     <div className="description">
                         <span>Descrição</span>
