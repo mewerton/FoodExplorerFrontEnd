@@ -7,16 +7,30 @@ import { FiUpload } from 'react-icons/fi'
 import { NewItem } from '../../components/NewItem'
 import { Link } from "react-router-dom";
 
+import { useState } from "react";
+
 import ImgBack from '../../assets/back.svg'
 
 export function New(){
+    const [ingredients, setIngredients] = useState([])
+    const [newIngredients, setNewIngredients] = useState("")
+
+    function handleAddIngredients(){
+        setIngredients(prevState => [...prevState, newIngredients])
+        setNewIngredients("")
+       
+    }
+
+    function handleRemoveIngredients(deleted){
+        setIngredients(prevState => prevState.filter(ingredient => ingredient !== deleted))
+    }
+
+
     return(
         <Container>
             <HeaderAdmin />
             <main>
                 <div className="main">
-
-                
                 <div className="back">
                         <img src={ImgBack} alt="Voltar" />
                         <Link to="/">voltar</Link>
@@ -38,8 +52,23 @@ export function New(){
                     <div className="ingredients">
                         <span>Ingredientes</span>
                         <div className="item">
-                        <NewItem value="Pão Naan"/>
-                        <NewItem isNew placeholder="Adicionar"/>
+                        {
+                            ingredients.map((ingredient, index) => (
+                            
+                            <NewItem 
+                                key={String(index)}
+                                value={ingredient}
+                                onClick={()=> handleRemoveIngredients(ingredient)}
+                            />
+                            ))
+                        }
+                        <NewItem 
+                            isNew 
+                            placeholder="Adicionar"
+                            onChange={e => setNewIngredients(e.target.value)}
+                            value={newIngredients}
+                            onClick={handleAddIngredients}
+                        />
                         </div>
                         
                     </div>
