@@ -8,6 +8,9 @@ import { NewItem } from '../../components/NewItem'
 import { Link } from "react-router-dom";
 
 import { useState } from "react";
+import { api } from "../../services/api";
+
+import { useNavigate } from "react-router-dom";
 
 import ImgBack from '../../assets/back.svg'
 
@@ -15,10 +18,14 @@ export function New(){
 
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
-
+    const [value, setValue] = useState(0)
 
     const [ingredients, setIngredients] = useState([])
     const [newIngredients, setNewIngredients] = useState("")
+
+    const navigate = useNavigate()
+
+
 
     function handleAddIngredients(){
         setIngredients(prevState => [...prevState, newIngredients])
@@ -28,6 +35,17 @@ export function New(){
 
     function handleRemoveIngredients(deleted){
         setIngredients(prevState => prevState.filter(ingredient => ingredient !== deleted))
+    }
+
+    async function handleNewProduct(){
+        await api.post("/products",{
+            title,
+            ingredients,
+            description,
+            value
+        })
+        alert("Produto adicionado com sucesso!")
+        navigate("/")
     }
 
 
@@ -52,6 +70,7 @@ export function New(){
                             <div className="input">
                                 <Input
                                     placeholder="Ex.: Salada Ceasar"
+                                    onChange={ e => setTitle(e.target.value)}
                                 />
                             </div>
                         </div>
@@ -84,8 +103,9 @@ export function New(){
                             <span>Preço</span>
                             <div className="input">
                                 <Input
-                                    type="number" min="0"
+                                    type="ranger" min="0"
                                     placeholder="R$ 00,00"
+                                    onChange={ e => setValue(e.target.value)}
                                 />
                             </div>
                         </div>
@@ -93,11 +113,14 @@ export function New(){
                     <div className="description">
                         <span>Descrição</span>
                         <div className="textarea">
-                            <Textarea placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"/>
+                            <Textarea 
+                                placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"
+                                onChange={ e => setDescription(e.target.value)}
+                            />
                         </div>
                     </div>
                     <div className="add">
-                        <button> <p>Adicionar prato</p>  </button>
+                        <button onClick={handleNewProduct}> <p>Adicionar prato</p>  </button>
                     </div>
 
                 </Form>
