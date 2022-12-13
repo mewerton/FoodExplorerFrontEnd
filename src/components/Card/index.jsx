@@ -7,9 +7,19 @@ import add from '../../assets/add.svg'
 import { Button } from "../Button"
 import { Link } from "react-router-dom"
 
+import { useNavigate } from 'react-router-dom';
+import { api } from "../../services/api"
+import { useAuth } from "../../hooks/auth"
 
-export function Card(){
+export function Card({ data }){
+
+    const { user } = useAuth()
+    const navigate = useNavigate()
+
+    //erro está acontecendo ao tentar buscar informações do banco
+    //const avatarURL = `${api.defaults.baseURL}/files/${data.avatar}`
     
+
     const [total, setTotal] = useState(1)
     
     function addItem(){
