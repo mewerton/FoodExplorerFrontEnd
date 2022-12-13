@@ -7,6 +7,7 @@ import { Banner } from '../../components/Banner'
 import { Footer } from '../../components/Footer'
 
 export function Home(){
+
   return(
     <Container>
       <Header/>

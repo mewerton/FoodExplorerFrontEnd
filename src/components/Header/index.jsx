@@ -7,8 +7,9 @@ import { ButtonRequest } from "../ButtonRequest";
 import { Link } from 'react-router-dom'
 import { useAuth } from "../../hooks/auth";
 
+
 export function Header(){
-    
+     
     const { signOut } = useAuth()
 
     return(
@@ -22,7 +23,11 @@ export function Header(){
     </div>
     <ButtonText name="Meus favoritos"/>
     
-    <Search placeholder="Busque pelas opções de pratos" icon={FiSearch}/>
+    <Search 
+        placeholder="Busque pelas opções de pratos" 
+        icon={FiSearch}
+        onChange={() => setSearch(e.target.value)}
+        />
     
     <ButtonReq>
         <ButtonRequest name="Meu pedido (0)"/>
