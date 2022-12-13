@@ -38,6 +38,18 @@ export function New(){
     }
 
     async function handleNewProduct(){
+
+        if(!title){
+            return alert("Você precisa informar o nome do produto.")
+        }
+        if(!value){
+            return alert("Você precisa informar o valor do produto.")
+        }
+        
+        if(newIngredients){
+            return alert("você deixou um ingrediente no campo sem adicionar, clique no + para adicionar ou deixe o campo vazio.")
+        }
+
         await api.post("/products",{
             title,
             ingredients,
