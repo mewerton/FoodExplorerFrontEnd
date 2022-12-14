@@ -4,12 +4,18 @@ import { FiSearch, FiLogOut } from 'react-icons/fi'
 import { Search } from '../Search'
 import { ButtonText } from "../ButtonText";
 import { ButtonRequest } from "../ButtonRequest";
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from "../../hooks/auth";
 
 export function HeaderAdmin(){
 
     const { signOut } = useAuth()
+    const navigation = useNavigate()
+
+    function handleSignOut(){
+        navigation("/")
+        signOut()
+    }
 
     return(
     <Container>
@@ -34,7 +40,7 @@ export function HeaderAdmin(){
             <ButtonRequest name="Adicionar prato"/>
         </ButtonReq>
         
-        <ButtonText icon={FiLogOut} onClick={signOut}/>
+        <ButtonText icon={FiLogOut} onClick={handleSignOut}/>
     </div>
         </div>
 

@@ -3,7 +3,17 @@ import imgTest from '../../assets/imgTeste.png'
 import { Button } from "../Button"
 import { Link } from "react-router-dom"
 
-export function CardAdmin(){
+import { useNavigate } from 'react-router-dom';
+import { api } from "../../services/api"
+import { useAuth } from "../../hooks/auth"
+
+export function CardAdmin({ data }){
+
+    const { user } = useAuth()
+    const navigate = useNavigate()
+
+    //const avatarURL = `${api.defaults.baseURL}/files/${data.avatar}`
+
     return(
         <Container>
         <div className="fav"></div>
