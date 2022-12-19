@@ -5,8 +5,23 @@ import { Header} from '../../components/Header'
 import { Card } from '../../components/Card'
 import { Banner } from '../../components/Banner'
 import { Footer } from '../../components/Footer'
+import { api } from '../../services/api'
+import { useEffect } from 'react'
+
+
 
 export function Home(){
+
+  useEffect(() => {
+    async function fetchProducts(){
+      const response = await api.get(
+        `/products/`
+        
+      )
+      console.log(response)
+    }
+    fetchProducts()
+  },[])
 
   return(
     <Container>

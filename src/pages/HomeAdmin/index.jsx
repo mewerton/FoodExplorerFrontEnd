@@ -6,7 +6,23 @@ import { CardAdmin } from '../../components/CardAdmin'
 import { Banner } from '../../components/Banner'
 import { Footer } from '../../components/Footer'
 
+import { api } from '../../services/api'
+import { useEffect, useState } from 'react'
+
 export function HomeAdmin(){
+
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    async function fetchProducts(){
+      const response = await api.get(
+        `/products/?title&ingredients`
+      )
+      setProducts(response.data)
+    }
+    fetchProducts()
+  },[])
+
   return(
     <Container>
       <HeaderAdmin/>
@@ -15,43 +31,34 @@ export function HomeAdmin(){
         <div className="Cards">
           <Section name="Pratos principais">
               <Links>        
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                
+                {
+                  products.map(product =>(
+                   <li key={product.id}><CardAdmin data={product} /></li> 
+                  ))
+                }
               </Links>
           </Section>
         </div>
+
         <div className="Cards">
           <Section name="Sobremesas">
               <Links>        
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
+                {
+                  products.map(product =>(
+                   <li key={product.id}><CardAdmin data={product} /></li> 
+                  ))
+                }
               </Links>
           </Section>
         </div>
         <div className="Cards">
           <Section name="Bedidas">
-              <Links>        
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
-                <li><CardAdmin/></li>
+          <Links>        
+                {
+                  products.map(product =>(
+                   <li key={product.id}><CardAdmin data={product} /></li> 
+                  ))
+                }
               </Links>
           </Section>
         </div>

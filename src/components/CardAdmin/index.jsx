@@ -8,26 +8,26 @@ import { api } from "../../services/api"
 import { useAuth } from "../../hooks/auth"
 
 export function CardAdmin({ data }){
-
+console.log(data)
     const { user } = useAuth()
     const navigate = useNavigate()
 
-    //const avatarURL = `${api.defaults.baseURL}/files/${data.avatar}`
+    const avatarURL = `${api.defaults.baseURL}/files/${data.avatar}`
 
     return(
         <Container>
         <div className="fav"></div>
         <div className="item">
            <div className="image">
-           <Link to="/product/:id"><img src={imgTest}/></Link>
+          <Link to="/product/:id"><img src={avatarURL}/></Link>
                 
            </div>
            
-           <div className="name"><Link to="/product/:id">Nome do prato</Link>  </div>
-           <div className="info">Informações do prato</div>
+           <div className="name"><Link to="/product/:id">{data.title}</Link>  </div> 
+           <div className="info">{data.description}</div>
            <div className="price">
                 <span>R$</span>
-                <span>79,90</span>
+                <span>{data.value}</span>
            </div>
            <div className="request"> 
                 <ButtonEdit>
@@ -40,8 +40,7 @@ export function CardAdmin({ data }){
 
         </div>
         
-            
-
+    
         </Container>
         
     )
