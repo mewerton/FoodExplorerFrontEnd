@@ -35,6 +35,11 @@ export const Container = styled.div`
     .image{
             cursor: pointer;
             transition: 0.2s; 
+
+            img{
+                max-width: 200px;
+                
+           }
         }
 
     .image:hover{

@@ -5,20 +5,20 @@ import { Header} from '../../components/Header'
 import { Card } from '../../components/Card'
 import { Banner } from '../../components/Banner'
 import { Footer } from '../../components/Footer'
+
 import { api } from '../../services/api'
-import { useEffect } from 'react'
-
-
+import { useEffect, useState } from 'react'
 
 export function Home(){
+
+  const [products, setProducts] = useState([])
 
   useEffect(() => {
     async function fetchProducts(){
       const response = await api.get(
-        `/products/`
-        
+        `/products/?title&ingredients`
       )
-      console.log(response)
+      setProducts(response.data)
     }
     fetchProducts()
   },[])
@@ -29,48 +29,40 @@ export function Home(){
       <Banner/>
       <Main>  
         <div className="Cards">
-          <Section name="Pratos principais">
-              <Links>        
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                
-              </Links>
-          </Section>
+        <Links>
+              {
+              <Section name="Pratos principais">
+                {products.filter(products => products.category == "Pratos").map((item, index) => (
+                    <Card key={String(index)} data={item}/>
+                ))
+                }
+              </Section>}
+            </Links>
         </div>
-        <div className="Cards">
-          <Section name="Sobremesas">
-              <Links>        
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-              </Links>
-          </Section>
-        </div>
-        <div className="Cards">
-          <Section name="Bedidas">
-              <Links>        
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-                <li><Card/></li>
-              </Links>
-          </Section>
-        </div>
+
+          <div className="Cards">
+          <Links>
+              {
+              <Section name="Sobremesas">
+                {products.filter(products => products.category == "Sobremesas").map((item, index) => (
+                    <Card key={String(index)} data={item}/>
+                ))
+                }
+              </Section>}
+            </Links>
+          </div>
+
+          <div className="Cards">
+            <Links>
+              {
+              <Section name="Bebidas">
+                {products.filter(products => products.category == "Bebidas").map((item, index) => (
+                    <Card key={String(index)} data={item}/>
+                ))
+                }
+              </Section>}
+            </Links>
+          </div>
       
 
       </Main>
