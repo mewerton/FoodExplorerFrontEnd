@@ -7,7 +7,7 @@ import { ButtonRequest } from "../ButtonRequest";
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from "../../hooks/auth";
 
-export function HeaderAdmin(){
+export function HeaderAdmin({ setSearch }){
 
     const { signOut } = useAuth()
     const navigation = useNavigate()
@@ -31,7 +31,11 @@ export function HeaderAdmin(){
 
     <div className="conponents">
 
-        <Search placeholder="Buscar pratos" icon={FiSearch}/>
+        <Search 
+            placeholder="Buscar pratos" 
+            icon={FiSearch}
+            onChange={e => setSearch(e.target.value)}
+        />
    
         <ButtonText name="Administrador"/>
         

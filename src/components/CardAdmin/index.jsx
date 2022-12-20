@@ -16,7 +16,7 @@ export function CardAdmin({ data, ...rest }){
     }
 
     return(
-        <Container>
+        <Container {...rest}>
         <div className="fav"></div>
         <div className="item">
            <div className="image">

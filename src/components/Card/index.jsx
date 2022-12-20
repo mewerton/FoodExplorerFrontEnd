@@ -35,7 +35,7 @@ export function Card({ data, ...rest }){
 
 
     return(
-        <Container>
+        <Container {...rest}>
         <div className="fav"><MdFavoriteBorder size={25}/></div>
         <div className="item">
            <div className="image">
