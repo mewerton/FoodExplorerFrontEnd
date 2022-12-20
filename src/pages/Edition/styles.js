@@ -76,7 +76,7 @@ export const Form = styled.form`
             
     }
 
-    .image, .name, .ingredients, .description, >span{
+    .image, .name, .ingredients, .price, .description, >span{
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
@@ -134,8 +134,16 @@ export const Form = styled.form`
         }
     }
 
+    .ingredientsPrice{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    
     .ingredients{
         margin-top: 40px;
+        width: 100%;
+        margin-right: 32px;
     }
     .item{
         display: flex;
@@ -150,6 +158,12 @@ export const Form = styled.form`
         margin-top: 8px;
 
     }
+    .price{
+        margin-top: 40px;
+        
+    }
+
+
 
     .description{
         margin-top: 32px;

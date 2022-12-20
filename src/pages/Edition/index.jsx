@@ -5,7 +5,7 @@ import { Textarea } from '../../components/Textarea'
 import { Input } from '../../components/Input'
 import { FiUpload } from 'react-icons/fi'
 import { NewItem } from '../../components/NewItem'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import ImgBack from '../../assets/back.svg'
 
@@ -35,13 +35,25 @@ export function Edition(){
                             </div>
                         </div>
                     </div>
-                    <div className="ingredients">
-                        <span>Ingredientes</span>
-                        <div className="item">
-                        <NewItem value="Pão Naan"/>
-                        <NewItem isNew placeholder="Adicionar"/>
+                    <div className="ingredientsPrice">
+                        <div className="ingredients">
+                            <span>Ingredientes</span>
+                            <div className="item">
+                            <NewItem value="Pão Naan"/>
+                            <NewItem isNew placeholder="Adicionar"/>
+                            </div>
+                            
                         </div>
-                        
+                        <div className="price">
+                            <span>Preço</span>
+                            <div className="input">
+                                <Input
+                                    type="ranger" min="0"
+                                    placeholder="R$ 00,00"
+                                />
+                            </div>
+                        </div>
+
                     </div>
                     <div className="description">
                         <span>Descrição</span>
