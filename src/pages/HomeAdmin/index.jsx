@@ -1,5 +1,4 @@
 import { Container, Links, Main } from './styles'
-import { Button } from '../../components/Button'
 import { Section } from '../../components/Section'
 import { HeaderAdmin} from '../../components/HeaderAdmin'
 import { CardAdmin } from '../../components/CardAdmin'
@@ -52,8 +51,6 @@ export function HomeAdmin(){
             </Links>
           </div>
 
-
-        
           <div className="Cards">
             <Links>
               {

@@ -1,17 +1,10 @@
 import { Container, ButtonEdit, ButtonDelete } from "./styles"
-import imgTest from '../../assets/imgTeste.png'
 import { Button } from "../Button"
 import { Link } from "react-router-dom"
-
-import { useNavigate } from 'react-router-dom';
 import { api } from "../../services/api"
-import { useAuth } from "../../hooks/auth"
 
-export function CardAdmin({ data }){
-console.log(data)
-    const { user } = useAuth()
-    const navigate = useNavigate()
-
+export function CardAdmin({ data, ...rest }){
+    
     const avatarURL = `${api.defaults.baseURL}/files/${data.avatar}`
 
     return(
@@ -19,8 +12,7 @@ console.log(data)
         <div className="fav"></div>
         <div className="item">
            <div className="image">
-          <Link to="/product/:id"><img src={avatarURL}/></Link>
-                
+          <Link to="/product/:id"><img src={avatarURL}/></Link>     
            </div>
            
            <div className="name"><Link to="/product/:id">{data.title}</Link>  </div> 
@@ -37,9 +29,7 @@ console.log(data)
                     <Link><Button name="Excluir"/></Link> 
                 </ButtonDelete>
            </div>
-
         </div>
-        
     
         </Container>
         
