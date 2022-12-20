@@ -76,7 +76,7 @@ export const Form = styled.form`
             
     }
 
-    .image, .name, .ingredients, .price, .description, >span{
+    .image, .name, .ingredients, .price, .description, .category, >span{
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;

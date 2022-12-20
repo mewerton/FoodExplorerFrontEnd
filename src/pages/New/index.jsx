@@ -20,6 +20,9 @@ export function New(){
     const [description, setDescription] = useState("")
     const [value, setValue] = useState(0)
 
+    const [category, setCategory] = useState("");
+    const [avatarFile, setAvatarFile] = useState("");
+
     const [ingredients, setIngredients] = useState([])
     const [newIngredients, setNewIngredients] = useState("")
 
@@ -44,6 +47,9 @@ export function New(){
         if(!title){
             return alert("Você precisa informar o nome do produto.")
         }
+        if(!category){
+            return alert("Você precisa informar uma categoria.")
+        }
         if(!value){
             return alert("Você precisa informar o valor do produto.")
         }
@@ -54,6 +60,7 @@ export function New(){
 
         await api.post("/products",{
             title,
+            category,
             ingredients,
             description,
             value
@@ -85,6 +92,15 @@ export function New(){
                                 <Input
                                     placeholder="Ex.: Salada Ceasar"
                                     onChange={ e => setTitle(e.target.value)}
+                                />
+                            </div>
+                        </div>
+                        <div className="category">
+                            <span>Categoria</span>
+                            <div className="input">
+                                <Input
+                                    placeholder="Ex.: Pratos"
+                                    onChange={ e => setCategory(e.target.value)}
                                 />
                             </div>
                         </div>
