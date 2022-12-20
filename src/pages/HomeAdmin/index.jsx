@@ -29,39 +29,42 @@ export function HomeAdmin(){
       <Banner/>
       <Main>  
         <div className="Cards">
-          <Section name="Pratos principais">
-              <Links>        
-                {
-                  products.map(product =>(
-                   <li key={product.id}><CardAdmin data={product} /></li> 
-                  ))
+        <Links>
+              {
+              <Section name="Pratos principais">
+                {products.filter(products => products.category == "Pratos").map((item, index) => (
+                    <CardAdmin key={String(index)} data={item}/>
+                ))
                 }
-              </Links>
-          </Section>
+              </Section>}
+            </Links>
         </div>
 
-        <div className="Cards">
-          <Section name="Sobremesas">
-              <Links>        
-                {
-                  products.map(product =>(
-                   <li key={product.id}><CardAdmin data={product} /></li> 
-                  ))
+          <div className="Cards">
+          <Links>
+              {
+              <Section name="Sobremesas">
+                {products.filter(products => products.category == "Sobremesas").map((item, index) => (
+                    <CardAdmin key={String(index)} data={item}/>
+                ))
                 }
-              </Links>
-          </Section>
-        </div>
-        <div className="Cards">
-          <Section name="Bedidas">
-          <Links>        
-                {
-                  products.map(product =>(
-                   <li key={product.id}><CardAdmin data={product} /></li> 
-                  ))
+              </Section>}
+            </Links>
+          </div>
+
+
+        
+          <div className="Cards">
+            <Links>
+              {
+              <Section name="Bebidas">
+                {products.filter(products => products.category == "Bebidas").map((item, index) => (
+                    <CardAdmin key={String(index)} data={item}/>
+                ))
                 }
-              </Links>
-          </Section>
-        </div>
+              </Section>}
+            </Links>
+          </div>
       
 
       </Main>
@@ -69,3 +72,12 @@ export function HomeAdmin(){
     </Container>
   )
 }
+
+
+              {/* <Links>        
+                {
+                  products.map(product =>(
+                   <li key={product.id}><CardAdmin data={product} /></li> 
+                  ))
+                }
+              </Links> */}

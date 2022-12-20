@@ -35,4 +35,6 @@ export const Main = styled.main`
     } 
     padding-bottom: 98px;
 
+    
+
 `
