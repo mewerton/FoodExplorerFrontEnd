@@ -1,11 +1,10 @@
 import { useState } from "react"
 import { Container, ButtonAdd } from "./styles"
 import { MdFavoriteBorder } from 'react-icons/md'
-import imgTest from '../../assets/imgTeste.png'
+import { Button } from "../Button"
+
 import sub from '../../assets/sub.svg'
 import add from '../../assets/add.svg'
-import { Button } from "../Button"
-import { Link } from "react-router-dom"
 
 import { api } from "../../services/api"
 import { useNavigate } from 'react-router-dom';
@@ -32,7 +31,6 @@ export function Card({ data, ...rest }){
             setTotal(prevState => prevState - 1)
         }
     }
-
 
     return(
         <Container {...rest}>

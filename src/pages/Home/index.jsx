@@ -11,59 +11,57 @@ import { useEffect, useState } from 'react'
 
 export function Home(){
 
+  const [search, setSearch] = useState("")
+
   const [products, setProducts] = useState([])
+
+  let typeProducts
 
   useEffect(() => {
     async function fetchProducts(){
       const response = await api.get(
-        `/products/?title&ingredients`
+        `/products/?title=${search}&ingredients`
       )
       setProducts(response.data)
     }
     fetchProducts()
-  },[])
+  },[search])
 
   return(
     <Container>
-      <Header/>
+      <Header setSearch={setSearch}/>
       <Banner/>
       <Main>  
-        <div className="Cards">
-        <Links>
-              {
+        
+      <div className="Cards">
+              {products.filter(product => product.category == "Pratos").length > 0 &&
               <Section name="Pratos principais">
                 {products.filter(products => products.category == "Pratos").map((item, index) => (
                     <Card key={String(index)} data={item}/>
                 ))
                 }
               </Section>}
-            </Links>
         </div>
 
           <div className="Cards">
-          <Links>
-              {
+              {products.filter(product => product.category == "Sobremesas").length > 0 &&
               <Section name="Sobremesas">
                 {products.filter(products => products.category == "Sobremesas").map((item, index) => (
                     <Card key={String(index)} data={item}/>
                 ))
                 }
               </Section>}
-            </Links>
           </div>
 
           <div className="Cards">
-            <Links>
-              {
+              {products.filter(product => product.category == "Bebidas").length > 0 &&
               <Section name="Bebidas">
                 {products.filter(products => products.category == "Bebidas").map((item, index) => (
                     <Card key={String(index)} data={item}/>
                 ))
                 }
               </Section>}
-            </Links>
           </div>
-      
 
       </Main>
       <Footer/>
