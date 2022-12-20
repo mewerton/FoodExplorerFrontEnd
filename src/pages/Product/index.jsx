@@ -1,21 +1,46 @@
-import { useState } from 'react'
+
 import { Header } from '../../components/Header'
 import { Container, ButtonReq } from './styles'
 import { Footer } from '../../components/Footer'
 import { ButtonRequest } from '../../components/ButtonRequest'
 import { Link } from "react-router-dom";
 
+import { useState, useEffect } from 'react'
+import { useNavigate, useParams } from "react-router-dom";
+import { api } from '../../services/api';
+
+
 import ImgBack from '../../assets/back.svg'
 import alface from '../../assets/alface.png'
 import tomate from '../../assets/tomate.png'
 import rabanete from '../../assets/rabanete.png'
 import paonaan from '../../assets/paonaan.png'
-import prato from '../../assets/SaladaRavanello.png'
 import sub from '../../assets/sub.svg'
 import add from '../../assets/add.svg'
 
 
 export function Product(){
+
+    const [data, setData] = useState("")
+    const params = useParams()
+    
+    const avatarURL =  data && `${api.defaults.baseURL}/files/${data.avatar}`
+
+    const navigate = useNavigate()
+
+    function handleBack() {
+        navigate(-1);
+      }
+
+      useEffect(() => {
+        async function fetchProduct() {
+          const response = await api.get(`/products/${params.id}`);
+          setData(response.data);
+        }
+    
+        fetchProduct();
+      }, []);
+
 
     //Função de adicionar e remover item precisa ser puxada do card cado lá já tenha preenchido.
     
@@ -38,18 +63,18 @@ export function Product(){
                 <div className="product">
                     <div className="back">
                         <img src={ImgBack} alt="Voltar" />
-                        <Link to="/">voltar</Link>
+                        <Link onClick={handleBack}>voltar</Link>
                     </div>
                     <div className="item">
                         <div className="image">
-                            <img src={prato} alt="prato" height="390" />
+                            <img src={avatarURL} alt="prato" height="390" />
                         </div>
                         <div className="info">
                             <div className="name">
-                                <span>Salada Ravanello</span>
+                                <span>{data.title}</span>
                             </div>
                             <div className="description">
-                                <span>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.</span>
+                                <span>{data.description}</span>
                             </div>
                             <div className="ingredients">
                                 <div className="ingredient">
@@ -73,7 +98,7 @@ export function Product(){
                             <div className="request">
                                 <div className="value">
                                     <span>R$</span>
-                                    <span>25,97</span>
+                                    <span>{data.value}</span>
                                 </div>
                                 <div className="requestItem">
                                     <button onClick={subItem}><img src={sub}/> </button>

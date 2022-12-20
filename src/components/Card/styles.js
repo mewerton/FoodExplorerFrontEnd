@@ -40,6 +40,9 @@ export const Container = styled.div`
                 max-width: 200px;
                 
            }
+           button{
+            background: transparent;
+           }
         }
 
     .image:hover{
@@ -80,7 +83,7 @@ export const Container = styled.div`
     
     }
 
-    .name a{
+    .name button{
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
@@ -89,6 +92,7 @@ export const Container = styled.div`
         margin-top: 16px;
         cursor: pointer;
         color: ${({ theme }) => theme.COLORS.GREY_100};
+        background: transparent;
     }
     .info{
         font-family: 'Roboto';

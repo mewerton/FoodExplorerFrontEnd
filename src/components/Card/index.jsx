@@ -8,14 +8,20 @@ import { Button } from "../Button"
 import { Link } from "react-router-dom"
 
 import { api } from "../../services/api"
+import { useNavigate } from 'react-router-dom';
 
 
 export function Card({ data, ...rest }){
 
     const avatarURL = `${api.defaults.baseURL}/files/${data.avatar}`
     
-
     const [total, setTotal] = useState(1)
+
+    const navigate = useNavigate();
+
+    function handleProducts(id) {
+        navigate(`/products/${id}`);
+    }
     
     function addItem(){
         setTotal(prevState => prevState + 1)
@@ -33,9 +39,9 @@ export function Card({ data, ...rest }){
         <div className="fav"><MdFavoriteBorder size={25}/></div>
         <div className="item">
            <div className="image">
-           <Link to="/product/:id"><img src={avatarURL}/></Link>
+           <button onClick={() => handleProducts(data.id)}><img src={avatarURL}/></button>
            </div>
-           <div className="name"><Link to="/product/:id">{data.title}</Link></div>
+           <div className="name"><button onClick={() => handleProducts(data.id)}>{data.title}</button></div>
            <div className="info">{data.description}</div>
            <div className="price">
                 <span>R$</span>

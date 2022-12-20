@@ -25,7 +25,9 @@ export function New(){
 
     const navigate = useNavigate()
 
-
+    function handleBack() {
+        navigate(-1);
+      }
 
     function handleAddIngredients(){
         setIngredients(prevState => [...prevState, newIngredients])
@@ -68,7 +70,7 @@ export function New(){
                 <div className="main">
                 <div className="back">
                         <img src={ImgBack} alt="Voltar" />
-                        <Link to="/">voltar</Link>
+                        <Link onClick={handleBack}>voltar</Link>
                 </div>
                 <Form>
                     <h1>Adicionar prato</h1>

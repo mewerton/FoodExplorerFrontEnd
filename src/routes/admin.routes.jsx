@@ -12,7 +12,7 @@ export function AdminRoutes(){
             <Route path="/" element={<HomeAdmin />}/>
             <Route path="/new" element={<New />}/>
             <Route path="/edit/:id" element={<Edition />}/>
-            <Route path="/product/:id" element={<ProductAdmin />}/>
+            <Route path="/products/:id" element={<ProductAdmin />}/>
         </Routes>
     )
 
