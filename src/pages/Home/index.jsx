@@ -1,5 +1,4 @@
 import { Container, Links, Main } from './styles'
-import { Button } from '../../components/Button'
 import { Section } from '../../components/Section'
 import { Header} from '../../components/Header'
 import { Card } from '../../components/Card'
@@ -14,8 +13,6 @@ export function Home(){
   const [search, setSearch] = useState("")
 
   const [products, setProducts] = useState([])
-
-  let typeProducts
 
   useEffect(() => {
     async function fetchProducts(){

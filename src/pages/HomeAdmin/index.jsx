@@ -14,8 +14,6 @@ export function HomeAdmin(){
 
   const [products, setProducts] = useState([])
 
-  let typeProducts
-
   useEffect(() => {
     async function fetchProducts(){
       const response = await api.get(
@@ -69,11 +67,3 @@ export function HomeAdmin(){
   )
 }
 
-
-              {/* <Links>        
-                {
-                  products.map(product =>(
-                   <li key={product.id}><CardAdmin data={product} /></li> 
-                  ))
-                }
-              </Links> */}
