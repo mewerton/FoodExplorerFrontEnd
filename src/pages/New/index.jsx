@@ -13,6 +13,7 @@ import { api } from "../../services/api";
 import { useNavigate } from "react-router-dom";
 
 import ImgBack from '../../assets/back.svg'
+import Upload from '../../assets/upload.svg'
 
 export function New(){
 
@@ -84,7 +85,18 @@ export function New(){
                     <div className="nameImage">
                         <div className="image">
                             <span>Imagem do prato</span>
-                            <button><FiUpload size={24}/>Selecione imagem</button>
+                            <div className="inputImage">
+                            <label htmlFor="imageUpload">Selecione imagem</label>
+                            <img src={Upload} alt="" />
+                            <Input
+                                    id="imageUpload"
+                                    type="file"
+                                    placeholder="Selecione imagem"
+                                    onChange={ e => setTitle(e.target.value)}
+                                />
+
+                            </div>
+                            {/* <button><FiUpload size={24}/>Selecione imagem</button> */}
                         </div>
                         <div className="name">
                             <span>Nome</span>

@@ -90,50 +90,59 @@ export const Form = styled.form`
     .name{
         width: 100%;
     }
+
     .input{
         margin-top: 8px;
         
-        
     }
         
+    .inputImage{
         
-    .image{
-             
-        >button {
-            
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            
-            gap: 8px;
-            
-            white-space: nowrap;
-
-            width: 229px;
-            height: 45px;
-            
-            margin-top: 8px;
-            
-            border: 1px solid ${({theme}) => theme.COLORS.WHITE};
-            border-radius: 5px;
+        width: 229px;
+        height: 45px; 
+        margin-top: 8px;
+        
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        
+        
+        label{
+            z-index: 2;
+            position: absolute;
+            margin-left: 64px;
+            width: max-content;
 
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
-
-            background: transparent;
-            color: ${({theme}) => theme.COLORS.WHITE};
-
-            :hover{
-                color: ${({theme}) => theme.COLORS.BLUE_100};
-                border: 1px solid ${({theme}) => theme.COLORS.BLUE_100};
-            }
+            cursor: pointer;
+         
         }
-    }
 
+        img{
+            margin-left: 32px;
+            
+        
+        }
+
+        input {
+         
+         display: none;
+        }
+
+        border: 1px solid ${({theme}) => theme.COLORS.WHITE};
+        border-radius: 5px;
+        
+        
+
+  
+
+    }
+    
+    
     .ingredientsPrice{
         display: flex;
         justify-content:space-between;
