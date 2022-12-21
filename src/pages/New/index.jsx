@@ -22,7 +22,7 @@ export function New(){
     const [value, setValue] = useState(0)
 
     const [category, setCategory] = useState("");
-    const [avatarFile, setAvatarFile] = useState("");
+    const [avatarFile, setAvatarFile] = useState(null);
 
     const [ingredients, setIngredients] = useState([])
     const [newIngredients, setNewIngredients] = useState("")
@@ -59,13 +59,16 @@ export function New(){
             return alert("você deixou um ingrediente no campo sem adicionar, clique no + para adicionar ou deixe o campo vazio.")
         }
 
-        await api.post("/products",{
-            title,
-            category,
-            ingredients,
-            description,
-            value
-        })
+        const formData = new FormData()
+        formData.append("avatar", avatarFile)
+        formData.append("title", title)
+        formData.append("description", description)
+        formData.append("category", category)
+        formData.append("value", value)
+        formData.append("ingredients", ingredients)
+
+
+        await api.post("/products", formData)
         alert("Produto adicionado com sucesso!")
         navigate("/")
     }
@@ -92,7 +95,7 @@ export function New(){
                                     id="imageUpload"
                                     type="file"
                                     placeholder="Selecione imagem"
-                                    onChange={ e => setTitle(e.target.value)}
+                                    onChange={ e => setAvatarFile(e.target.files[0])}
                                 />
 
                             </div>
