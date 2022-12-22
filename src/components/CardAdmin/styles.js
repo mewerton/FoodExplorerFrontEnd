@@ -20,6 +20,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 300px;
 
     }
 
@@ -35,13 +36,18 @@ export const Container = styled.div`
     .image{
             cursor: pointer;
             transition: 0.2s; 
+            height: 200px;
+            display: flex;
+            
            
             img{
-                max-width: 200px;
+                max-width: 176px;
+                
                                 
            }
            button{
             background: transparent;
+            border: none;
            }
         }
 
@@ -89,19 +95,29 @@ export const Container = styled.div`
         font-weight: 700;
         font-size: 24px;
         line-height: 140%;
-        margin-top: 16px;
+        
         cursor: pointer;
-        color: ${({ theme }) => theme.COLORS.WHITE};
+        color: ${({ theme }) => theme.COLORS.GREY_100};
         background: transparent;
+
+        border: none;
     }
     .info{
+        width: 220px;
+        height: 44px;
+
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 160%;
 
+
+        text-align: center;
+
         margin-top: 16px;
+
+        color: ${({ theme }) => theme.COLORS.GREY_200};
     }
 
     .price{

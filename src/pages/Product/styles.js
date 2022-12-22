@@ -65,6 +65,15 @@ width: 100%;
 }
 .image{
     margin-right: 41px;
+    
+    img{
+       
+        max-width: 390px;
+        max-height: 390px;
+
+        width: auto;
+        height: auto;
+    }
 }
 
 .name{
