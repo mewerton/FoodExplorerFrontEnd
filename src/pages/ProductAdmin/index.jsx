@@ -27,6 +27,16 @@ export function ProductAdmin(){
 
     const navigate = useNavigate()
 
+    async function handleRemove(){
+        const confirm = window.confirm("Deseja realmente remover esse produto do site?")
+
+        if(confirm){
+            await api.delete(`/products/${params.id}`)
+            alert("Produto excluído")
+            navigate("/")
+        }
+    }
+
     function handleBack() {
         navigate(-1);
       }
@@ -96,7 +106,11 @@ export function ProductAdmin(){
                                     </ButtonEdit>
                                     <ButtonDelete>
 
-                                    <Link><Button name="Excluir prato"/></Link>
+                                    <Link><Button 
+                                            name="Excluir prato"
+                                            onClick={handleRemove}
+                                            />
+                                    </Link>
                                     </ButtonDelete>
                                     
                                     

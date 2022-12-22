@@ -11,6 +11,16 @@ export function CardAdmin({ data, ...rest }){
 
     const navigate = useNavigate();
 
+    async function handleRemove(){
+        const confirm = window.confirm("Deseja realmente remover esse produto do site?")
+
+        if(confirm){
+            await api.delete(`/products/${data.id}`)
+            alert("Produto excluído")
+            navigate("/")
+        }
+    }
+
     function handleProducts(id) {
         navigate(`/products/${id}`);
     }
@@ -34,7 +44,11 @@ export function CardAdmin({ data, ...rest }){
                     <Link to="/edit/:id"><Button name="Editar"/></Link>        
                 </ButtonEdit>  
                 <ButtonDelete>
-                    <Link><Button name="Excluir"/></Link> 
+                    <Link><Button 
+                            name="Excluir"
+                            onClick={handleRemove}
+                            />
+                    </Link> 
                 </ButtonDelete>
            </div>
         </div>
