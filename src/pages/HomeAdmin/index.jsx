@@ -17,7 +17,7 @@ export function HomeAdmin(){
   useEffect(() => {
     async function fetchProducts(){
       const response = await api.get(
-        `/products/?title=${search}&ingredients`
+        `/products/?title=${search}&ingredients=${search}`
       )
       setProducts(response.data)
     }

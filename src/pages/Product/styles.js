@@ -158,7 +158,11 @@ width: 100%;
     }
 
    >label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
     font-size: 20px;
+    
     color: ${({theme}) => theme.COLORS.GREY_100};
    }
 }

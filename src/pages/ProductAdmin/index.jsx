@@ -8,6 +8,8 @@ import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from "react-router-dom";
 import { api } from '../../services/api';
 
+import { Ingredients } from "../../components/Ingredients"
+
 import ImgBack from '../../assets/back.svg'
 import alface from '../../assets/alface.png'
 import tomate from '../../assets/tomate.png'
@@ -63,62 +65,53 @@ export function ProductAdmin(){
                         <img src={ImgBack} alt="Voltar" />
                         <Link onClick={handleBack}>voltar</Link>
                     </div>
-                    <div className="item">
-                        <div className="image">
-                            <img src={avatarURL} alt="prato" height="390" />
-                        </div>
-                        <div className="info">
-                            <div className="name">
-                                <span>{data.title}</span>
+                    {data &&
+                        <div className="item">
+                            <div className="image">
+                                <img src={avatarURL} alt="prato" height="390" />
                             </div>
-                            <div className="description">
-                                <span>{data.description}</span>
-                            </div>
-                            <div className="ingredients">
-                                <div className="ingredient">
-                                    <img src={alface} height="59" width="59" alt="alface" />
-                                    <span>alface</span>
+                            <div className="info">
+                                <div className="name">
+                                    <span>{data.title}</span>
                                 </div>
-                                <div className="ingredient">
-                                    <img src={tomate} height="59" width="59" alt="tomate" />
-                                    <span>tomate</span>
+                                <div className="description">
+                                    <span>{data.description}</span>
                                 </div>
-                                <div className="ingredient">
-                                    <img src={rabanete} height="59" width="59" alt="rabanete" />
-                                    <span>rabanete</span>
-                                </div>
-                                <div className="ingredient">
-                                    <img src={paonaan} height="59" width="59" alt="pão naan" />
-                                    <span>pão naan</span>
-                                </div>
-                                
-                            </div>
-                            <div className="request">
-                                <div className="value">
-                                    <span>R$</span>
-                                    <span>{data.value}</span>
-                                </div>
-                                <div className="requestItem">
+                                <div className="ingredients">
+                                {
+                                            data.ingredients.map((ingredient) => (
+                                            <Ingredients key={String(ingredient.id)} ingredient={ingredient.name} />
+                                            ))
+                                        }
                                     
-                                    <ButtonEdit>
-                                        <Link to="/edit/:id"><Button name="Editar prato"/></Link>
+                                </div>
+                                <div className="request">
+                                    <div className="value">
+                                        <span>R$</span>
+                                        <span>{data.value}</span>
+                                    </div>
+                                    <div className="requestItem">
                                         
-                                    </ButtonEdit>
-                                    <ButtonDelete>
+                                        <ButtonEdit>
+                                            <Link to="/edit/:id"><Button name="Editar prato"/></Link>
+                                            
+                                        </ButtonEdit>
+                                        <ButtonDelete>
 
-                                    <Link><Button 
-                                            name="Excluir prato"
-                                            onClick={handleRemove}
-                                            />
-                                    </Link>
-                                    </ButtonDelete>
-                                    
-                                    
-                                    
+                                        <Link><Button 
+                                                name="Excluir prato"
+                                                onClick={handleRemove}
+                                                />
+                                        </Link>
+                                        </ButtonDelete>
+                                        
+                                        
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    }
                 </div>
             </div>
             <Footer/>

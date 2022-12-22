@@ -39,7 +39,7 @@ export function Card({ data, ...rest }){
            <div className="image">
            <button onClick={() => handleProducts(data.id)}><img src={avatarURL}/></button>
            </div>
-           <div className="name"><button onClick={() => handleProducts(data.id)}>{data.title}</button></div>
+           <div className="name"><button onClick={() => handleProducts(data.id)}>{data.title} ></button></div>
            <div className="info">{data.description}</div>
            <div className="price">
                 <span>R$</span>
