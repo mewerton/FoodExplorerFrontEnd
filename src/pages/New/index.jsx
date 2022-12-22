@@ -43,7 +43,9 @@ export function New(){
         setIngredients(prevState => prevState.filter(ingredient => ingredient !== deleted))
     }
 
-    async function handleNewProduct(){
+    async function handleNewProduct(event){
+
+        event.preventDefault()
 
         if(!title){
             return alert("Você precisa informar o nome do produto.")
@@ -65,8 +67,11 @@ export function New(){
         formData.append("description", description)
         formData.append("category", category)
         formData.append("value", value)
-        formData.append("ingredients", ingredients)
+        //formData.append("ingredients", ingredients)
 
+        for (let i = 0; i < ingredients.length; i += 1) {
+            formData.append("ingredients", ingredients[i]);
+        }
 
         await api.post("/products", formData)
         alert("Produto adicionado com sucesso!")
@@ -165,7 +170,7 @@ export function New(){
                         </div>
                     </div>
                     <div className="add">
-                        <button onClick={handleNewProduct}> <p>Adicionar prato</p>  </button>
+                        <button onClick={event => handleNewProduct(event)}> <p>Adicionar prato</p>  </button>
                     </div>
 
                 </Form>

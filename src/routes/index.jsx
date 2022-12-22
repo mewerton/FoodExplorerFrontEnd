@@ -13,7 +13,7 @@ export function Routes(){
     return(
         <BrowserRouter>
     
-            {!user ? (<><AuthRoutes/></>) : user && user.admin === 1 ? (<><AdminRoutes/></>) : (<><AppRoutes/></>)}
+            {!user ? (<AuthRoutes/>) : user && user.admin === 1 ? (<AdminRoutes/>) : (<AppRoutes/>)}
             {/* {user ? <AppRoutes/> : <AuthRoutes/>} */}
            
         </BrowserRouter>
