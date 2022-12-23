@@ -110,9 +110,12 @@ export function New(){
                             <span>Nome</span>
                             <div className="input">
                                 <Input
+                                    type="text"
                                     placeholder="Ex.: Salada Ceasar"
+                                    maxLength={40}
                                     onChange={ e => setTitle(e.target.value)}
                                 />
+                                
                             </div>
                         </div>
                         <div className="category">
@@ -122,6 +125,13 @@ export function New(){
                                     placeholder="Ex.: Pratos"
                                     onChange={ e => setCategory(e.target.value)}
                                 />
+                                {/* <select name="categoria" id=""  value={estado} onChange={ e => setCategory(e.target.value)}>
+                                    <option value="1">Selecione a categoria</option>
+                                    <option value="2">Pratos</option>
+                                    <option value="3">Sobremesas</option>
+                                    <option value="4">Bebidas</option>
+                                </select> */}
+                               
                             </div>
                         </div>
                     </div>
@@ -153,8 +163,9 @@ export function New(){
                             <span>Preço</span>
                             <div className="input">
                                 <Input
-                                    type="ranger" min="0"
-                                    placeholder="R$ 00,00"
+                                    type="text"
+                                    placeholder="Ex: 10,00"
+                                    maxLength={9}
                                     onChange={ e => setValue(e.target.value)}
                                 />
                             </div>
@@ -165,6 +176,7 @@ export function New(){
                         <div className="textarea">
                             <Textarea 
                                 placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"
+                                maxLength={90}
                                 onChange={ e => setDescription(e.target.value)}
                             />
                         </div>

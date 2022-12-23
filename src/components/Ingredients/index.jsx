@@ -1,4 +1,5 @@
 import { Container } from "./styles";
+
 import Lettuce from "../../assets/alface.png";
 import Plum from "../../assets/ameixa.png"
 import Almonds from "../../assets/amendoas.png"
@@ -26,94 +27,93 @@ import Whiskey from "../../assets/whiskey.png";
 
 export function Ingredients({ ingredient }) {
   function fetchImageIngredient(name) {
+
     let ingredient = name.toLowerCase().trim()
     
-    let result;
+    let imageIngredient;
     
     if (ingredient == "alface") {
-      return result = Lettuce
+      return imageIngredient = Lettuce
       
     } else if (ingredient == "ameixa") {
-      return result = Plum
+      return imageIngredient = Plum
 
     } else if (ingredient == "amêndoas") {
-      return result = Almonds
+      return imageIngredient = Almonds
 
     } else if (ingredient == "aniz") {
-      return result = Anise  
+      return imageIngredient = Anise  
 
     } else if (ingredient == "café") {
-      return result = Coffee
+      return imageIngredient = Coffee
 
     } else if (ingredient == "camarão") {
-      return result = Shrimp
+      return imageIngredient = Shrimp
 
     } else if (ingredient == "canela") {
-      return result = LowerLeg
+      return imageIngredient = LowerLeg
       
     } else if (ingredient == "claras") {
-      return result = EggWhites 
+      return imageIngredient = EggWhites 
 
     } else if (ingredient == "damasco") {
-      return result = Damascus
+      return imageIngredient = Damascus
 
     } else if (ingredient == "farinha") {
-      return result = Flour
+      return imageIngredient = Flour
 
     } else if (ingredient == "limão") {
-      return result = Lemon
+      return imageIngredient = Lemon
 
     } else if (ingredient == "maçã") {
-      return result = Apple
+      return imageIngredient = Apple
 
     } else if (ingredient == "maracujá") {
-      return result = PassionFruit
+      return imageIngredient = PassionFruit
 
     } else if (ingredient == "massa") {
-      return result = Pasta
+      return imageIngredient = Pasta
 
     } else if (ingredient == "pão") {
-      return result = Bread
+      return imageIngredient = Bread
 
     } else if (ingredient == "pão naan") {
-      return result = BreadNaan
+      return imageIngredient = BreadNaan
 
     } else if (ingredient == "pepino") {
-      return result = Cucumber
+      return imageIngredient = Cucumber
 
     } else if (ingredient == "pêssego") {
-      return result = Peach
+      return imageIngredient = Peach
 
     } else if (ingredient == "pesto") {
-      return result = Pesto
+      return imageIngredient = Pesto
 
     } else if (ingredient == "presunto") {
-      return result = Ham
+      return imageIngredient = Ham
 
     } else if (ingredient == "rabanete") {
-      return result = Radish
+      return imageIngredient = Radish
 
     } else if (ingredient == "rúcula") {
-      return result = Arugula
+      return imageIngredient = Arugula
 
     } else if (ingredient == "tomate") {
-      return result = Tomato
+      return imageIngredient = Tomato
 
-      
     } else if (ingredient == "whiskey") {
-      return result = Whiskey
+      return imageIngredient = Whiskey
    
     } else {
-      return result = Apple
+      return imageIngredient = Apple
     }}
   
-  
-  let result = fetchImageIngredient(ingredient)
+  let imageIngredient = fetchImageIngredient(ingredient)
   
     return (
       <Container>
-        <img src={result} alt="Ingredientes que são usados no seu prato." />
-        <span className="ingredient-name">{ingredient}</span>
+        <img src={imageIngredient} alt="Imagens dos ingredientes do seu prato." />
+        <span className="nameIngredient">{ingredient}</span>
       </Container>
     );
   }

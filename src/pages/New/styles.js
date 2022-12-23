@@ -169,6 +169,15 @@ export const Form = styled.form`
     }
     .price{
         margin-top: 40px;
+
+        .input{
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+           
+        }
         
     }
 
