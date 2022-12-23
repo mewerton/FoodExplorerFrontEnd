@@ -24,6 +24,7 @@ import Radish from "../../assets/rabanete.png";
 import Arugula from "../../assets/rucula.png";
 import Tomato from "../../assets/tomate.png";
 import Whiskey from "../../assets/whiskey.png";
+import NoImage from "../../assets/noimage.gif";
 
 export function Ingredients({ ingredient }) {
   function fetchImageIngredient(name) {
@@ -105,7 +106,7 @@ export function Ingredients({ ingredient }) {
       return imageIngredient = Whiskey
    
     } else {
-      return imageIngredient = Apple
+      return imageIngredient = NoImage
     }}
   
   let imageIngredient = fetchImageIngredient(ingredient)
