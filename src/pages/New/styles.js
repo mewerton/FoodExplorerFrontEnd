@@ -95,6 +95,30 @@ export const Form = styled.form`
         margin-top: 8px;
         
     }
+    
+    .inputCategory{
+        margin-top: 8px;
+        width: 175px;
+
+        >select{
+
+            width: 100%;
+            padding: 12px 14px;
+            
+            background-color: transparent;
+            color: ${({theme}) => theme.COLORS.WHITE};
+            
+            border: 1px solid ${({theme}) => theme.COLORS.WHITE};
+            border-radius: 5px;
+
+            >option{
+                background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+                
+            }
+        }      
+    }
+
+    
         
     .inputImage{
         

@@ -27,6 +27,8 @@ export function New(){
     const [ingredients, setIngredients] = useState([])
     const [newIngredients, setNewIngredients] = useState("")
 
+    //const[categoryForm, setCategoryForm] = useState("")
+
     const navigate = useNavigate()
 
     function handleBack() {
@@ -67,6 +69,7 @@ export function New(){
         formData.append("description", description)
         formData.append("category", category)
         formData.append("value", value)
+        
         //formData.append("ingredients", ingredients)
 
         for (let i = 0; i < ingredients.length; i += 1) {
@@ -120,18 +123,16 @@ export function New(){
                         </div>
                         <div className="category">
                             <span>Categoria</span>
-                            <div className="input">
-                                <Input
+                            <div className="inputCategory">
+                                {/* <Input
                                     placeholder="Ex.: Pratos"
                                     onChange={ e => setCategory(e.target.value)}
-                                />
-                                {/* <select name="categoria" id=""  value={estado} onChange={ e => setCategory(e.target.value)}>
-                                    <option value="1">Selecione a categoria</option>
-                                    <option value="2">Pratos</option>
-                                    <option value="3">Sobremesas</option>
-                                    <option value="4">Bebidas</option>
-                                </select> */}
-                               
+                                /> */}
+                                <select name="category" value={category} onChange={ e => setCategory(e.target.value)}>     
+                                    <option value="Pratos">Pratos</option>
+                                    <option value="Sobremesas">Sobremesas</option>
+                                    <option value="Bebidas">Bebidas</option>
+                                </select>
                             </div>
                         </div>
                     </div>

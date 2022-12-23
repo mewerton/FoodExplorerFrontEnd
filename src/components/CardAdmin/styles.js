@@ -52,7 +52,7 @@ export const Container = styled.div`
         }
 
     .image:hover{
-        transform: scale(1.1); 
+        transform: scale(1.08); 
     }
     .request{
         display: flex;
@@ -95,6 +95,7 @@ export const Container = styled.div`
         font-weight: 700;
         font-size: 24px;
         line-height: 140%;
+
         
         cursor: pointer;
         color: ${({ theme }) => theme.COLORS.GREY_100};
