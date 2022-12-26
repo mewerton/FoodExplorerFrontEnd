@@ -23,6 +23,7 @@ export function Home(){
     }
     fetchProducts()
   },[search])
+ 
 
   return(
     <Container>
