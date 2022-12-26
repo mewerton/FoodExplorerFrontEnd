@@ -11,17 +11,9 @@ import { api } from '../../services/api';
 import { Ingredients } from "../../components/Ingredients"
 
 import ImgBack from '../../assets/back.svg'
-import alface from '../../assets/alface.png'
-import tomate from '../../assets/tomate.png'
-import rabanete from '../../assets/rabanete.png'
-import paonaan from '../../assets/paonaan.png'
-import prato from '../../assets/SaladaRavanello.png'
-
-
 
 export function ProductAdmin(){
 
-    
     const [data, setData] = useState("")
     const params = useParams()
     
@@ -51,10 +43,6 @@ export function ProductAdmin(){
     
         fetchProduct();
       }, []);
-
-
-    //Função de adicionar e remover item precisa ser puxada do card cado lá já tenha preenchido.
-    
 
     return(
         <Container>

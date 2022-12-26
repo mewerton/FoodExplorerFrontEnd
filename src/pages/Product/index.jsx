@@ -12,10 +12,6 @@ import { api } from '../../services/api';
 import { Ingredients } from "../../components/Ingredients"
 
 import ImgBack from '../../assets/back.svg'
-import alface from '../../assets/alface.png'
-import tomate from '../../assets/tomate.png'
-import rabanete from '../../assets/rabanete.png'
-import paonaan from '../../assets/paonaan.png'
 import sub from '../../assets/sub.svg'
 import add from '../../assets/add.svg'
 

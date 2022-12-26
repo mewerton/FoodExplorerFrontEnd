@@ -27,8 +27,6 @@ export function New(){
     const [ingredients, setIngredients] = useState([])
     const [newIngredients, setNewIngredients] = useState("")
 
-    //const[categoryForm, setCategoryForm] = useState("")
-
     const navigate = useNavigate()
 
     function handleBack() {
@@ -107,7 +105,7 @@ export function New(){
                                 />
 
                             </div>
-                            {/* <button><FiUpload size={24}/>Selecione imagem</button> */}
+                            
                         </div>
                         <div className="name">
                             <span>Nome</span>
