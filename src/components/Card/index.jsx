@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Container, ButtonAdd } from "./styles"
 import { MdFavoriteBorder } from 'react-icons/md'
+
 import { Button } from "../Button"
 
 import sub from '../../assets/sub.svg'
@@ -8,6 +9,7 @@ import add from '../../assets/add.svg'
 
 import { api } from "../../services/api"
 import { useNavigate } from 'react-router-dom';
+//import { useFavorites } from "../../hooks/favorites"
 
 
 export function Card({ data, ...rest }){
@@ -22,6 +24,14 @@ export function Card({ data, ...rest }){
         navigate(`/products/${id}`);
     }
     
+    function handleFavoriteItem(){
+        alert("Recurso será adicionado em breve!")
+      }
+
+    function handleIncludeItem(){
+        alert("Recurso será estará disponível em breve!")
+    }
+
     function addItem(){
         setTotal(prevState => prevState + 1)
     }
@@ -34,7 +44,8 @@ export function Card({ data, ...rest }){
 
     return(
         <Container {...rest}>
-        <div className="fav"><MdFavoriteBorder size={25}/></div>
+        
+        <button onClick={handleFavoriteItem} className="fav"><MdFavoriteBorder size={25}/></button>
         <div className="item">
            <div className="image">
            <button onClick={() => handleProducts(data.id)}><img src={avatarURL}/></button>
@@ -52,7 +63,7 @@ export function Card({ data, ...rest }){
                 <button onClick={addItem}><img src={add}/> </button>
                 
                 <ButtonAdd>
-                    <Button name="Incluir"/>
+                    <Button name="Incluir" onClick={handleIncludeItem}/>
                 </ButtonAdd>   
            </div>
 

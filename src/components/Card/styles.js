@@ -30,6 +30,10 @@ export const Container = styled.div`
         margin-top: 21px;
         margin-right: 19px;
         cursor: pointer;
+        background: transparent;
+        border: none;
+        color: white;
+        
     }
 
     .image{
