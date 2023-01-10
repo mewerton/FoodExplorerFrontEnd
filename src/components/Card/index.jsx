@@ -48,7 +48,7 @@ export function Card({ data, ...rest }){
            <div className="request"> 
            
                 <button onClick={subItem}><img src={sub}/> </button>
-                <span>{total}</span>
+                <span>{total.toString().padStart(2, "0")}</span>
                 <button onClick={addItem}><img src={add}/> </button>
                 
                 <ButtonAdd>
