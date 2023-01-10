@@ -88,7 +88,7 @@ export function Product(){
                                     </div>
                                     <div className="requestItem">
                                         <button onClick={subItem}><img src={sub}/> </button>
-                                        <label>{total}</label>
+                                        <label>{total.toString().padStart(2, "0")}</label>
                                         <button onClick={addItem}><img src={add}/> </button>
                                         <ButtonReq>
                                             <ButtonRequest name="incluir"/>
