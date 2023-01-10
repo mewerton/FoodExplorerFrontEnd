@@ -51,6 +51,10 @@ export function Product(){
         }
     }
 
+    function handleIncludeItem(){
+        alert("Este recurso estará disponível em breve!")
+    }
+
     return(
         <Container>
             <Header/>
@@ -91,7 +95,7 @@ export function Product(){
                                         <label>{total.toString().padStart(2, "0")}</label>
                                         <button onClick={addItem}><img src={add}/> </button>
                                         <ButtonReq>
-                                            <ButtonRequest name="incluir"/>
+                                            <ButtonRequest onClick={handleIncludeItem} name="incluir"/>
                                         </ButtonReq>
                                         
                                         

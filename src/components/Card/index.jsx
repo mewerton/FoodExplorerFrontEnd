@@ -25,11 +25,11 @@ export function Card({ data, ...rest }){
     }
     
     function handleFavoriteItem(){
-        alert("Recurso será adicionado em breve!")
+        alert("Este recurso estará disponível em breve!")
       }
 
     function handleIncludeItem(){
-        alert("Recurso será estará disponível em breve!")
+        alert("Este recurso estará disponível em breve!")
     }
 
     function addItem(){

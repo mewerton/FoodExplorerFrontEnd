@@ -17,6 +17,16 @@ export function HeaderAdmin({ setSearch }){
         signOut()
     }
 
+    function handlePageAdmin(){
+        alert(`Esta será a página onde o administrador poderá: 
+        Alterar sua senha de acesso
+        Alterar texto do Banner da página inicial
+        Alterar nome da Empresa do Header e Footer
+
+        Logo mais este recurso estará disponível.
+        `)
+    }
+
     return(
     <Container>
         
@@ -37,7 +47,7 @@ export function HeaderAdmin({ setSearch }){
             onChange={e => setSearch(e.target.value)}
         />
    
-        <ButtonText name="Administrador"/>
+        <ButtonText onClick={handlePageAdmin} name="Administrador"/>
         
     
         <ButtonReq to="/new">

@@ -18,6 +18,14 @@ export function Header({ setSearch }){
         signOut()
     }
 
+    function handleFavorites(){
+        alert("Este recurso estará disponível em breve!")
+    }
+
+    function handleMyRequests(){
+        alert("Este recurso estará disponível em breve!")
+    }
+
     return(
     <Container>
         
@@ -27,7 +35,7 @@ export function Header({ setSearch }){
             <span>food explorer</span>
         </Link>
     </div>
-    <ButtonText name="Meus favoritos"/>
+    <ButtonText onClick={handleFavorites} name="Meus favoritos"/>
     
     <Search 
         placeholder="Busque pelas opções de pratos" 
@@ -36,7 +44,7 @@ export function Header({ setSearch }){
         />
     
     <ButtonReq>
-        <ButtonRequest name="Meu pedido (0)"/>
+        <ButtonRequest onClick={handleMyRequests} name="Meu pedido (0)"/>
     </ButtonReq>
     
     <ButtonText icon={FiLogOut} onClick={handleSignOut}/>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 
 import { api } from "../../services/api"
 import { useNavigate } from 'react-router-dom';
+import { setState } from "react"
 
 export function CardAdmin({ data, ...rest }){
     
@@ -16,9 +17,10 @@ export function CardAdmin({ data, ...rest }){
 
         if(confirm){
             await api.delete(`/products/${data.id}`)
-            alert("Produto excluído")
+            alert("Produto excluído com sucesso")
             navigate("/")
         }
+
     }
 
     function handleProducts(id) {
