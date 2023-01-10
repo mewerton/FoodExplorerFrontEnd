@@ -35,6 +35,7 @@ span{
     line-height: 140%;
 
 }
+
 `
 
 export const ImgTextBanner = styled.div`
@@ -51,4 +52,6 @@ export const ImgTextBanner = styled.div`
         margin-top: 225px;
         margin-left: 30px;
     }
+
+    
 `

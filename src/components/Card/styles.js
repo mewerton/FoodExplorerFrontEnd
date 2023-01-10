@@ -32,7 +32,7 @@ export const Container = styled.div`
         cursor: pointer;
         background: transparent;
         border: none;
-        color: white;
+        color:${({theme}) => theme.COLORS.WHITE};
         
     }
 

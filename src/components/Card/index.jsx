@@ -9,8 +9,6 @@ import add from '../../assets/add.svg'
 
 import { api } from "../../services/api"
 import { useNavigate } from 'react-router-dom';
-//import { useFavorites } from "../../hooks/favorites"
-
 
 export function Card({ data, ...rest }){
 
