@@ -87,6 +87,7 @@ export const Container = styled.div`
         transform: scale(0.90);
         transition: 0.01s;
         }
+        
     
     }
 
@@ -140,7 +141,112 @@ export const Container = styled.div`
 
       
     }
+
+    @media(max-width:440px){
+
+        margin-right: 27px;
+        margin-top: 9.5px;
+
+        height: 280px;
+      
+        .item{
+        width: 170px;
+        height: 212px;
+
+       
+        }
+
+        .fav{
+        width: 22px;
+        
+        }
+
+        .image{
+          
+            height: 200px;
+
+            img{
+                max-width: 100px;
+    
+           }
+         
+        }
+        .image:hover{
+        
+            transform: none; 
+        
+        }
+
+        .name button{
+        
+            font-size: 14px;
+                
+        }
+        .info{
+
+        display: none;
+        }
+
+        .price{
+            
+            font-size: 18px;
+        
+
+            margin-bottom: 17px;
+            margin-top: 5px;
+
+        
+            >span:first-child{
+                margin-right: 13px;
+            }
+        }
+
+        .request{
+        
+            gap: 6px;
+
+            width: 108px;
+            height: 28px;
+
+            font-size: 13px;
+        
+            >button{
+                background: transparent;
+                border: 0;
+                
+                >img{
+                    width: 14px;
+                }
+            
+            }
+            >button:first-child{
+                margin-top: -10px;
+            }
+       
+       
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    } 
+
 `
 export const ButtonAdd = styled.div`
     width: 92px;
+
+    @media(max-width:390px){
+        width: 30px;
+    }
+
 `

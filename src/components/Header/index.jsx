@@ -38,6 +38,7 @@ export function Header({ setSearch }){
     <ButtonText onClick={handleFavorites} name="Meus favoritos"/>
     
     <Search 
+       
         placeholder="Busque pelas opções de pratos" 
         icon={FiSearch}
         onChange={e => setSearch(e.target.value)}
@@ -47,7 +48,7 @@ export function Header({ setSearch }){
         <ButtonRequest onClick={handleMyRequests} name="Meu pedido (0)"/>
     </ButtonReq>
     
-    <ButtonText icon={FiLogOut} onClick={handleSignOut}/>
+    <ButtonText id="logout" icon={FiLogOut} onClick={handleSignOut}/>
    
     </Container>
 

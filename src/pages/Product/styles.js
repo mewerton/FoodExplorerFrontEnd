@@ -186,6 +186,10 @@ width: 100%;
     }
 }
 
+@media(max-width:440px){
+    
+}
+
 `
 
 export const ButtonReq = styled.div`

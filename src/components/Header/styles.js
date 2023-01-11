@@ -31,7 +31,7 @@ export const Container = styled.header`
     cursor: pointer;
 
     padding-right: 10px;
-
+    
      }
   
      @media(max-width: 1140px){
@@ -45,6 +45,44 @@ export const Container = styled.header`
 
     }
 
+    @media(max-width:440px){
+
+
+        
+
+        height: 60px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        
+       
+        a{
+        white-space: nowrap; 
+        display: flex;
+        align-items: center; 
+        
+        gap: 5px;
+
+        font-size: 15px;
+        line-height: 19px;
+
+        padding-right: 5px;
+
+        }
+       
+
+        #logout{
+            width: 30px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    } 
+
 
 `
 
@@ -56,6 +94,9 @@ export const ButtonReq = styled.div`
         max-width: 160px;
     }
 
+    @media(max-width:440px){
+       
+    } 
 `
 
 

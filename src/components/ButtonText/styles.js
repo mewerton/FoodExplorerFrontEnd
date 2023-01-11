@@ -28,4 +28,9 @@ padding-right: 10px;
         transition: 0.02s;
 }
 
+@media(max-width:440px){
+        
+        font-size: 12px;
+} 
+
 `

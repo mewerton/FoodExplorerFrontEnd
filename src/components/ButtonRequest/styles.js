@@ -33,4 +33,20 @@ export const Container = styled.div`
         transition: 0.02s;
     }
 
+    @media(max-width:440px){
+        padding: 5px 12px;
+        gap: 5px;
+
+        font-size: 10px;
+        
+
+        width: 110px;
+        height: 30px;
+        
+        >img{
+            width: 13px;
+        }
+        
+    } 
+
 `

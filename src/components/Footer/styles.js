@@ -29,7 +29,7 @@ background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 25.1109px;
+    font-size: 25px;
     line-height: 29px;
 
     color: ${({theme}) => theme.COLORS.GREY_400};
@@ -49,5 +49,32 @@ background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
         width: 768px
     }
 }
+
+@media(max-width:440px){
+    height: 100%;
+    padding: 5px;
+    
+        .logoName{
+            font-size: 14px;
+        }
+        .logoImg{
+            img{
+                width: 15px;
+                margin-left: 10px;
+            }
+        }
+
+        .rights{
+            font-size: 10px;
+            margin-right: 10px;
+        }
+        
+        .footer{
+            
+        width: 100%;
+    
+        }
+
+    } 
 
 `

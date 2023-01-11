@@ -38,4 +38,11 @@ export const Container = styled.div`
         transition: 0.02s;
     }
 
+    @media(max-width:440px){
+        font-size: 11px;
+        height: 30px;
+
+        padding: 10px 22px;
+    }
+
 `

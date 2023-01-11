@@ -36,14 +36,34 @@ span{
 
 }
 
+@media(max-width:440px){
+
+    z-index: 1;
+
+    margin-top: 45px;
+   
+
+    .text{
+    margin-top: 35px;
+    width: 100%;
+    height: 62px;
+    }
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
 `
 
 export const ImgTextBanner = styled.div`
 
-      
     z-index: 2;
     left: -68.66px;
-    margin-top: -147px;
+    margin-top: -148px;
     margin-left: -56px;
     
     display: flex;
@@ -53,5 +73,35 @@ export const ImgTextBanner = styled.div`
         margin-left: 30px;
     }
 
-    
+    @media(max-width:440px){
+
+       display: flex;
+       align-items: center;
+
+            >div{
+            margin-top: 0px;
+            margin-left: 0px;
+            
+            }
+
+            img{
+                max-width: 250px;
+                max-height: 250px;
+                margin-top: 50px;
+                
+            }
+
+            h1{
+        
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            span{
+                font-size: 12px;
+            }
+
+    }
+  
+
 `

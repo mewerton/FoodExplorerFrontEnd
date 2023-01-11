@@ -53,6 +53,10 @@ border-radius: 5px;
         width: 180px;
     }
 
-    }
+}
+
+@media(max-width:440px){
+       display: none;
+    } 
 
 ` 

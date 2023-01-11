@@ -35,4 +35,12 @@ export const Main = styled.main`
     } 
     padding-bottom: 98px;
 
+    @media(max-width:440px){
+        .Cards:first-child{
+        margin-top: 12px;
+        
+    } 
+    padding-bottom: 28px;
+    } 
+
 `
