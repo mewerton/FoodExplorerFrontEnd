@@ -3,7 +3,6 @@ import { HeaderAdmin } from '../../components/HeaderAdmin'
 import { Footer } from '../../components/Footer'
 import { Textarea } from '../../components/Textarea'
 import { Input } from '../../components/Input'
-import { FiUpload } from 'react-icons/fi'
 import { NewItem } from '../../components/NewItem'
 import { Link } from "react-router-dom";
 
@@ -67,8 +66,6 @@ export function New(){
         formData.append("description", description)
         formData.append("category", category)
         formData.append("value", value)
-        
-        //formData.append("ingredients", ingredients)
 
         for (let i = 0; i < ingredients.length; i += 1) {
             formData.append("ingredients", ingredients[i]);
@@ -78,7 +75,6 @@ export function New(){
         alert("Produto adicionado com sucesso!")
         navigate("/")
     }
-
 
     return(
         <Container>
@@ -122,10 +118,6 @@ export function New(){
                         <div className="category">
                             <span>Categoria</span>
                             <div className="inputCategory">
-                                {/* <Input
-                                    placeholder="Ex.: Pratos"
-                                    onChange={ e => setCategory(e.target.value)}
-                                /> */}
                                 <select name="category" value={category} onChange={ e => setCategory(e.target.value)}>     
                                     <option value="Selecionar">Selecionar</option>
                                     <option value="Pratos">Pratos</option>

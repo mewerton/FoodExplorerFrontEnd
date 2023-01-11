@@ -14,8 +14,7 @@ export function Routes(){
         <BrowserRouter>
     
             {!user ? (<AuthRoutes/>) : user && user.admin === 1 ? (<AdminRoutes/>) : (<AppRoutes/>)}
-            {/* {user ? <AppRoutes/> : <AuthRoutes/>} */}
-           
+                      
         </BrowserRouter>
     )
 }

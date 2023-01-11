@@ -1,19 +1,15 @@
-import { useState } from 'react'
-
 import { Container, Form } from './styles'
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { api } from '../../services/api'
+
 import { Input } from '../../components/Input'
+import { Button } from '../../components/Button'
+
 import {FiMail} from 'react-icons/fi'
 import {BsPerson} from 'react-icons/bs'
 import {RiLockPasswordLine} from 'react-icons/ri'
-import { Button } from '../../components/Button'
 import LogoGG from '../../assets/logoblueGG.svg'
-
-import { Link, useNavigate } from 'react-router-dom'
-
-import { api } from '../../services/api'
-
-
-
 
 export function SignUp(){
 
@@ -40,7 +36,6 @@ export function SignUp(){
                 alert("Não foi possível cadastrar")
             }
         })
-
     }
 
     return(

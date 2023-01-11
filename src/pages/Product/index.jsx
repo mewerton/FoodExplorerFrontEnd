@@ -1,4 +1,3 @@
-
 import { Header } from '../../components/Header'
 import { Container, ButtonReq } from './styles'
 import { Footer } from '../../components/Footer'
@@ -15,7 +14,6 @@ import ImgBack from '../../assets/back.svg'
 import sub from '../../assets/sub.svg'
 import add from '../../assets/add.svg'
 
-
 export function Product(){
 
     const [data, setData] = useState("")
@@ -24,6 +22,8 @@ export function Product(){
     const avatarURL =  data && `${api.defaults.baseURL}/files/${data.avatar}`
 
     const navigate = useNavigate()
+
+    const [total, setTotal] = useState(1)
 
     function handleBack() {
         navigate(-1);
@@ -38,9 +38,6 @@ export function Product(){
         fetchProduct();
       }, []);
 
- 
-    const [total, setTotal] = useState(1)
-    
     function addItem(){
         setTotal(prevState => prevState + 1)
     }
@@ -97,8 +94,6 @@ export function Product(){
                                         <ButtonReq>
                                             <ButtonRequest onClick={handleIncludeItem} name="incluir"/>
                                         </ButtonReq>
-                                        
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -107,8 +102,6 @@ export function Product(){
                 </div>
             </div>
             <Footer/>
-            
         </Container>
-        
     )
 }

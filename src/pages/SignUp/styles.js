@@ -32,8 +32,7 @@ export const Container = styled.div`
             line-height: 50px;
 
             color: ${({theme}) => theme.COLORS.WHITE};
-            }
-        
+            }   
     }
 
 @media(max-width: 800px){
@@ -44,16 +43,12 @@ export const Container = styled.div`
         justify-self: auto;
         
         align-items: center;
-
     }
 
     .logo{
         margin-top: -540px;
         position: absolute;
     }
-
-
-
 }
 
 @media(max-width: 470px){
@@ -67,14 +62,12 @@ export const Container = styled.div`
     position: absolute;
    
     }
-
 }
     
 `
 
 export const Form = styled.div`
 
-   
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -82,7 +75,6 @@ justify-content: center;
 
 width: 476px;
 height: 600px;
-
 
 background: ${({theme}) => theme.COLORS.BACKGROUND_700};  
 border-radius: 16px;
@@ -117,21 +109,21 @@ border-radius: 16px;
 }
 
 .name{
-margin-top:32px ;
+    margin-top:32px ;
 }
 .email{
-margin-top:32px ;
+    margin-top:32px ;
 }
     
 .password{
-margin-top:32px ;
-margin-bottom: 32px;
+    margin-top:32px ;
+    margin-bottom: 32px;
 
 }
 .create{
-margin-top:32px ;
-display: flex;
-justify-content: center;
+    margin-top:32px ;
+    display: flex;
+    justify-content: center;
 
 
     >a{
@@ -151,8 +143,6 @@ justify-content: center;
             transform: scale(1.1);
         }
     }
-
-
 }
 
 @media(max-width: 800px){
@@ -171,9 +161,6 @@ justify-content: center;
         width: 400px;
         height: 460px;
     }
-
-
-
 }
 
 `

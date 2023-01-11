@@ -2,16 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 
-/* font-family: 'DM Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    
 }
 
 body{
@@ -20,7 +14,6 @@ body{
 
     -webkit-font-smoothing: antialiased;
 
-    
 }
 
 input, body, button, textarea{
