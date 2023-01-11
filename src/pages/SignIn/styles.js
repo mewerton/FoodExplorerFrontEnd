@@ -54,18 +54,21 @@ export const Container = styled.div`
 
 }
 
-@media(max-width: 470px){
+@media(max-width: 440px){
  
-    margin-top: 50px;
-    width: 476px;
-    height: 100vh;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    
 
     .logo{
-    margin-top: -535px;
+    margin-top: -503px;
     position: absolute;
    
     }
 
+    
+    
 }
     
 `
@@ -106,7 +109,7 @@ border-radius: 16px;
     }
 }
 
-.login >.email,.password, >span{
+.login .email,.password, >span{
     
     color: ${({theme}) => theme.COLORS.GREY_200};
     display: flex;
@@ -147,17 +150,23 @@ justify-content: center;
         }
     }
 
-
 }
 
-@media(max-width: 470px){
+@media(max-width: 440px){
  
-    width: 450px;
-    height: 660px;
+    width: 390px;
+    height: 100%;
 
     .login{
-        width: 400px;
-        height: 460px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .login .email, .password, .name{
+    
+        max-width: 350px;
+        margin-left: 20px;
+    
     }
 
 }

@@ -47,7 +47,7 @@ export function SignUp(){
                 <span>food explorer</span>
             </div>
 
-            <Form>
+            <Form id="form">
                 <div className="login">
                     <h1>Crie sua conta</h1>
                     <div className="name">
