@@ -168,9 +168,11 @@ width: 100%;
 }
 
 @media(max-width: 1140px){
+
+    
     .productPage{
         width: 768px;
-        height: 65vh;
+        height: 100%;
         margin-bottom: 20px;
         
     }
