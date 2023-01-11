@@ -46,7 +46,7 @@ border-radius: 5px;
     
     >svg{
            
-    margin-left: 10px;
+        margin-left: 10px;
     }
 
     >input{

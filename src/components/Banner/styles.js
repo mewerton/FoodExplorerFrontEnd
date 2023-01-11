@@ -14,7 +14,6 @@ export const Container = styled.div`
     background: ${({ theme }) => theme.COLORS.BACKGROUND_LINEAR};
 
     border-radius: 8px;
-
 }
 
 h1{
@@ -25,8 +24,8 @@ h1{
     line-height: 140%;
 
     margin-bottom: 15px;
-
 }
+
 span{
     font-family: 'Poppins';
     font-style: normal;
@@ -39,23 +38,18 @@ span{
 @media(max-width:440px){
 
     z-index: 1;
-
     margin-top: 45px;
-   
-
-    .text{
-    margin-top: 35px;
-    width: 100%;
-    height: 62px;
-    }
-
+    
     display: flex;
     justify-content: center;
+
+    .text{
+        margin-top: 35px;
+        width: 100%;
+        height: 62px;
+    }
+
 }
-
-
-
-
 
 `
 

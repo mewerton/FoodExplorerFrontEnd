@@ -15,8 +15,6 @@ export function Edition(){
             <HeaderAdmin />
             <main>
                 <div className="main">
-
-                
                 <div className="back">
                         <img src={ImgBack} alt="Voltar" />
                         <Link to="/">voltar</Link>
@@ -64,12 +62,10 @@ export function Edition(){
                     <div className="add">
                         <button> <p>Salvar alterações</p>  </button>
                     </div>
-
                 </Form>
                 </div>
             </main>
             <Footer/>
-            
         </Container>
     )
 }

@@ -7,27 +7,19 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
 
-    
-    
- 
     >main{
         width: 1120px;
         display: flex;
         flex-direction: column;
         height: 100vh;
-       
-        
-    }
-    .main{
-       
-    }
 
+    }
+   
     .back{
 
         margin-top: 24px;
         display: flex;
         gap: 11px;
-
 
         a{
             font-family: 'Poppins';
@@ -46,8 +38,8 @@ export const Container = styled.div`
             }
 
             :active{
-            transform: scale(0.97);
-            transition: 0.02s;
+                transform: scale(0.97);
+                transition: 0.02s;
             }
         }
     }
@@ -57,7 +49,6 @@ export const Form = styled.form`
 
     margin-top: 24px;
   
-    
     >h1{
         font-family: 'Poppins';
         font-style: normal;
@@ -72,8 +63,7 @@ export const Form = styled.form`
             margin-top: 30px;
             display: flex;
             gap: 32px;
-           
-            
+    
     }
 
     .image, .name, .ingredients, .price, .description, >span{
@@ -84,7 +74,6 @@ export const Form = styled.form`
             line-height: 100%;
 
             color: ${({theme}) => theme.COLORS.GREY_200};
-
     }
 
     .name{
@@ -92,11 +81,9 @@ export const Form = styled.form`
     }
     .input{
         margin-top: 8px;
-        
-        
+                
     }
-        
-        
+     
     .image{
              
         >button {
@@ -163,8 +150,6 @@ export const Form = styled.form`
         
     }
 
-
-
     .description{
         margin-top: 32px;
 
@@ -185,7 +170,6 @@ export const Form = styled.form`
         justify-content: center;
         align-items: center;
         padding: 12px 32px;
-       
 
         width: 357px;
         height: 48px;
@@ -208,10 +192,7 @@ export const Form = styled.form`
             }
           
         }
-        
-        
+  
     }
-
-   
 
 `

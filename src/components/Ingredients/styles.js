@@ -20,4 +20,20 @@ export const Container = styled.div`
       font-size: 18px;
       color: ${({ theme }) => theme.COLORS.GRAY_100};
   }
+
+  @media(max-width:440px){
+  
+    > img {
+      max-width: 40px;
+      max-height: 40px;
+
+      width: auto;
+      height: auto;
+  }
+
+    .nameIngredient {
+        font-size: 12px;
+    }
+  }
+
 `

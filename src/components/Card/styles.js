@@ -150,14 +150,14 @@ export const Container = styled.div`
         height: 280px;
       
         .item{
-        width: 170px;
-        height: 212px;
+            width: 170px;
+            height: 212px;
 
        
         }
 
         .fav{
-        width: 22px;
+            width: 22px;
         
         }
 
@@ -184,7 +184,7 @@ export const Container = styled.div`
         }
         .info{
 
-        display: none;
+            display: none;
         }
 
         .price{
@@ -222,9 +222,7 @@ export const Container = styled.div`
             >button:first-child{
                 margin-top: -10px;
             }
-       
-       
-    
+
     }
 
 

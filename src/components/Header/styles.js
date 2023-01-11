@@ -16,22 +16,22 @@ export const Container = styled.header`
     background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 
     a{
-    white-space: nowrap; 
-    display: flex;
-    align-items: center; 
-    color: ${({ theme }) => theme.COLORS.WHITE};
+        white-space: nowrap; 
+        display: flex;
+        align-items: center; 
+        color: ${({ theme }) => theme.COLORS.WHITE};
 
-    gap: 11px;
+        gap: 11px;
 
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 29px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 29px;
 
-    cursor: pointer;
+        cursor: pointer;
 
-    padding-right: 10px;
-    
+        padding-right: 10px;
+        
      }
   
      @media(max-width: 1140px){
@@ -62,16 +62,16 @@ export const Container = styled.header`
         
        
         a{
-        white-space: nowrap; 
-        display: flex;
-        align-items: center; 
-        
-        gap: 5px;
+            white-space: nowrap; 
+            display: flex;
+            align-items: center; 
+            
+            gap: 5px;
 
-        font-size: 15px;
-        line-height: 19px;
+            font-size: 15px;
+            line-height: 19px;
 
-        padding-right: 5px;
+            padding-right: 5px;
 
         }
        

@@ -1,11 +1,12 @@
 import { Container, ButtonReq } from "./styles";
-import Logo from '../../assets/logoblue.svg'
-import { FiSearch, FiLogOut } from 'react-icons/fi'
+import { Link, useNavigate } from 'react-router-dom'
+import { useAuth } from "../../hooks/auth";
+
 import { Search } from '../Search'
 import { ButtonText } from "../ButtonText";
 import { ButtonRequest } from "../ButtonRequest";
-import { Link, useNavigate } from 'react-router-dom'
-import { useAuth } from "../../hooks/auth";
+import { FiSearch, FiLogOut } from 'react-icons/fi'
+import Logo from '../../assets/logoblue.svg'
 
 
 export function Header({ setSearch }){

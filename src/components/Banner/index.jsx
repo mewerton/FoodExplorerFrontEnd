@@ -4,8 +4,6 @@ import imgBanner from '../../assets/imgPrincipal.png'
 export function Banner(){
     return(
         <Container>
-           
-           
             <div className="text">
             <ImgTextBanner>
                 <img src={imgBanner}/>

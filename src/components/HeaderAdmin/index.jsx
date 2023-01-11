@@ -48,8 +48,7 @@ export function HeaderAdmin({ setSearch }){
         />
    
         <ButtonText onClick={handlePageAdmin} name="Administrador"/>
-        
-    
+  
         <ButtonReq to="/new">
             <ButtonRequest name="Adicionar prato"/>
         </ButtonReq>
@@ -58,10 +57,6 @@ export function HeaderAdmin({ setSearch }){
     </div>
         </div>
 
-
-
-   
-       
     </Container>
 
     )

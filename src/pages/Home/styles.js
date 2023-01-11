@@ -13,6 +13,7 @@ grid-template-areas:
     display: flex;
     justify-content: center;
 }
+
 `
 export const Links = styled.ul`
 
@@ -24,23 +25,29 @@ justify-content: center;
 >li{
     margin-top: 0px;
 }
+
 `
 
 export const Main = styled.main`
    
    background: ${({theme}) => theme.COLORS.BACKGROUND_900};
+   
+   padding-bottom: 98px;
 
    .Cards:first-child{
         margin-top: 62px;
     } 
-    padding-bottom: 98px;
 
     @media(max-width:440px){
+
+        width: 100%;
+        height: 100%;
+        
+        padding-bottom: 28px;
+
         .Cards:first-child{
         margin-top: 12px;
-        
-    } 
-    padding-bottom: 28px;
+        } 
     } 
 
 `

@@ -44,10 +44,10 @@ export const Container = styled.header`
 
             >span{
         
-            font-family: 'Roboto';
-            font-weight: 700;
-            font-size: 25px;
-            line-height: 29px;
+                font-family: 'Roboto';
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 29px;
             }
 
     }
@@ -59,14 +59,13 @@ export const Container = styled.header`
 
   
      @media(max-width: 1140px){
-
+         
+         gap: 12px;
+        
         .page{
             width: 760px;
         }
 
-        gap: 12px;
-
-        
         a{
             padding-right: 0px;
         }
@@ -79,8 +78,7 @@ export const ButtonReq = styled(Link)`
     max-width: 216px;
 
     @media(max-width: 1140px){
-       
-       
+
             max-width: 165px;
         
     }

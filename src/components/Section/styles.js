@@ -34,7 +34,6 @@ width: 1120px;
     
 }
 
-
 .buttons{
     width: 1120px;
     
@@ -64,7 +63,8 @@ width: 1120px;
         margin-left: 72px;
     }
    
-  }
+}
+
 .right{
     position: absolute;
     right: 0;
@@ -87,9 +87,6 @@ width: 1120px;
     height: 100%;
     width: 390px;
 
-    
-   
-   
     .section{
         
         font-size: 18px;
@@ -97,7 +94,6 @@ width: 1120px;
         >span{
             margin-left: 15px;
             
-          
         }
     }
 
@@ -107,42 +103,42 @@ width: 1120px;
     }
 
     .buttons{
-    width: 385px;
+        width: 385px;
     }
 
     .left{
-    position: absolute;
-    left: -5px;
-    width: 50px;
-    height: 160px;
-    border: none;
-    top: 0;
-    background: ${({theme}) => theme.COLORS.BACKGROUND_LINEAR5};
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    margin-top: 59.5px;
+        position: absolute;
+        left: -5px;
+        width: 50px;
+        height: 160px;
+        border: none;
+        top: 0;
+        background: ${({theme}) => theme.COLORS.BACKGROUND_LINEAR5};
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        margin-top: 59.5px;
+        
+        >img{
+            margin-top: 70px ;
+            margin-left: 20px;
+        }
     
-    >img{
-        margin-top: 70px ;
-        margin-left: 20px;
     }
-   
-  }
     .right{
-    position: absolute;
-    right: 0;
-    width: 50px;
-    height: 160px;
-    border: none;
-    top: 0px;
-    background: ${({theme}) => theme.COLORS.BACKGROUND_LINEAR5};
-    margin-top: 59.5px;
+        position: absolute;
+        right: 0;
+        width: 50px;
+        height: 160px;
+        border: none;
+        top: 0px;
+        background: ${({theme}) => theme.COLORS.BACKGROUND_LINEAR5};
+        margin-top: 59.5px;
 
-    >img{
-        margin-top: 70px ;
-        margin-left: 32px;
-    }
+        >img{
+            margin-top: 70px ;
+            margin-left: 32px;
+        }
  
-}
+    }
 
 } 
 

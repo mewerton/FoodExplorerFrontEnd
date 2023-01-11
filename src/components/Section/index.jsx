@@ -33,9 +33,7 @@ export function Section( {name, children} ){
             <div className="carousel" ref={carousel}>
             {children}
             </div>
-            
-           
-            
+
         </Container>
     )
 }
