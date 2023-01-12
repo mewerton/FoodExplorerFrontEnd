@@ -13,7 +13,7 @@
 
 A aplicação que desenvolvida é um cardápio digital para um restaurante conhecido como foodExplorer, onde é necessário se autenticar para entrar na aplicação através da tela de login. 
 
-O foodExplorer tem duas personas: o administrador e o usuário;
+O Food Explorer tem duas personas: o administrador e o usuário;
 
 O admin é a pessoa responsável pelo restaurante, logo, podendo criar, visualizar e apagar um prato a qualquer momento. 
 
