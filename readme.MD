@@ -110,8 +110,8 @@ $ npm run dev
 # Faça download do repositório
 $ https://github.com/mewerton/FoodExplorer_FrontEnd
 
-# Abra seu VS CODE e navegue até o diretório do BackEnd
-$ https://github.com/mewerton/FoodExplorer_FrontEnd
+# Abra seu VS CODE e navegue até o diretório do Frontend
+$ cd FoodExplorer_FrontEnd
 
 # Instale as dependências com:
 $ npm install
@@ -140,13 +140,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ---
 
-
-## 💻 Sobre:
-
-O aplicativo que desenvolveremos é um cardápio digital para um restaurante fictício, conhecido como foodExplorer.
-
-
----
 ## Deploy do projeto.
 https://...
 
