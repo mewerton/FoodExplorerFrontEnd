@@ -5,6 +5,9 @@
 <h4 align="center"> 
 	 Status: Em desenvolvimento...
 </h4>
+<p align="center">
+  <h4 align="center"><a href="https://foodexplorer-mw.netlify.app/">https://foodexplorer-mw.netlify.app/</a></h4>
+</p>
 
 ## 💻 Sobre:
 
