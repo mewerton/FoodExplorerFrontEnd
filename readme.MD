@@ -93,6 +93,10 @@ $ https://github.com/mewerton/FoodExplorer_BackEnd
 # Abra seu VS CODE e em seguida abra a pasta do Backend para abrir o projeto
 $ cd FoodExplorer_BackEnd
 
+# No BackEnd insira uma porta e um secret no arquivo .env vazio
+  AUTH_SECRET=
+  PORT=
+
 # Instale as dependências necessárias
 $ npm install
 
