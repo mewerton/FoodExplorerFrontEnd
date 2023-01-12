@@ -85,7 +85,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 
-## 🚧 Executando o BackEnd (servidor)
+### 🚧 Executando o BackEnd (servidor)
 
 ```bash
 # Faça download do repositório
@@ -108,7 +108,7 @@ $ npm run dev
 ```
 
 
-## 💻 Executando o FrontEnd
+### 💻 Executando o FrontEnd
 
 ```bash
 
