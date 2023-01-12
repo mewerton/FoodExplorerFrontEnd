@@ -36,7 +36,7 @@ border-radius: 5px;
 
 @media(max-width: 1140px){
     >input{
-        width: 180px;
+        width: 290px;
     }
 
     }
