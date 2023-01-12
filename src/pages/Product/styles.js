@@ -214,21 +214,20 @@ width: 100%;
 
     .item{
     
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     
-}
-.info{
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-content: center;
-    
-}
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-content: center;
+        
+    }
 
     .productPage{
         width: 100%;
@@ -245,23 +244,18 @@ width: 100%;
     }
 
     .name{
-    font-size: 30px;
-    margin-top: 15px;
+        font-size: 30px;
+        margin-top: 15px;
     }
 
     .description{
-    font-size: 14px;
-    width: 300px;
-    
-
-    
-   
+        font-size: 14px;
+        width: 300px;
     
     }
 
     .ingredients{
         margin-top: 15px;
-       
     }
 
     .request{
