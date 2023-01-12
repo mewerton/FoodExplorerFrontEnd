@@ -84,13 +84,13 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 
-### 🎲 Rodando o Back End (servidor)
+#### 🚧 Executando o BackEnd (servidor)
 
 ```bash
 # Faça download do repositório
 $ https://github.com/mewerton/FoodExplorer_BackEnd
 
-# Abra seu VS CODE e navegue até o diretório do BackEnd
+# Abra seu VS CODE e em seguida abra a pasta do Backend para abrir o projeto
 $ cd FoodExplorer_BackEnd
 
 # Instale as dependências necessárias
@@ -103,15 +103,15 @@ $ npm run dev
 ```
 
 
-#### 🎲 Rodando a aplicação (Frontend)
+#### 💻 Executando o FrontEnd
 
 ```bash
 
 # Faça download do repositório
 $ https://github.com/mewerton/FoodExplorer_FrontEnd
 
-# Abra seu VS CODE e navegue até o diretório do Frontend
-$ cd FoodExplorer_FrontEnd
+# Abra seu VS CODE e em seguida abra a pasta do Frontend para abrir o projeto
+$ FoodExplorer_FrontEnd
 
 # Instale as dependências com:
 $ npm install
