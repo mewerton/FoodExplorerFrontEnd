@@ -2,8 +2,6 @@
   <h1 align="center"><a href="https://food3xplorer.netlify.app/">Food Explorer - Rocketseat Explorer :rocket: </a></h1>
 </p>
 
-<p align="center"> Seu Cardápio digital </p>
-
 <h4 align="center"> 
 	 Status: Em desenvolvimento...
 </h4>
