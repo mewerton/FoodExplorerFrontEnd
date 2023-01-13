@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img width="550" height="99" src="./src/assets/responsivo.png">
+  <img width="550" src="./src/assets/responsivo.png">
 </p>
 
 ## 💻 Sobre:
