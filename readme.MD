@@ -9,6 +9,10 @@
   <h4 align="center"><a href="https://foodexplorer-mw.netlify.app/">https://foodexplorer-mw.netlify.app/</a></h4>
 </p>
 
+<p align="center">
+  <img width="550" height="99" src="./src/assets/responsivo.png">
+</p>
+
 ## 💻 Sobre:
 
 A aplicação que desenvolvida é um cardápio digital para um restaurante conhecido como foodExplorer, onde é necessário se autenticar para entrar na aplicação através da tela de login. 
