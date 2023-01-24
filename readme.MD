@@ -42,7 +42,6 @@ Neste desafio foram abordados os seguintes temas:
 - [Axios](https://www.npmjs.com/package/axios)
 - [Styled Components](https://styled-components.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [Swiper](https://swiperjs.com/)
 - [React Router Dom](https://react-icons.github.io/react-icons/)
 ---
 
