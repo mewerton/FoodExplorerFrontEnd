@@ -15,7 +15,7 @@
 
 ## 💻 Sobre:
 
-A aplicação que desenvolvida é um cardápio digital para um restaurante conhecido como foodExplorer, onde é necessário se autenticar para entrar na aplicação através da tela de login. 
+A aplicação desenvolvida é um cardápio digital para um restaurante conhecido como foodExplorer, onde é necessário se autenticar para entrar na aplicação através da tela de login. 
 
 O Food Explorer tem duas personas: o administrador e o usuário;
 
